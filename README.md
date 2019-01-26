@@ -1,9 +1,9 @@
 # Kok
 
-## Example Setup
+### Setup
 Create a new Kok project by issuing the following commands in your terminal:
 ```
-composer create-project kokst/kok admin
+composer create-project kokst/kok admin --stability dev
 ```
 
 ```
@@ -11,7 +11,7 @@ cd admin
 ```
 
 ```
-yarn
+yarn --no-bin-links
 ```
 
 ```
