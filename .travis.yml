@@ -12,7 +12,7 @@ matrix:
     - php: nightly
 
 before_script:
-  - cp .env.travis .env
+  - cp .env.example .env
   - travis_retry composer self-update
   - travis_retry composer install --no-interaction --prefer-source
   - "curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash"
