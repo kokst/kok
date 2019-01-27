@@ -1,0 +1,28 @@
+language: php
+
+php:
+  - '7.3'
+  - '7.2'
+  - '7.1'
+  - nightly
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: nightly
+
+before_script:
+  - cp .env.travis .env
+  - travis_retry composer self-update
+  - travis_retry composer install --no-interaction --prefer-source
+  - "curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash"
+ 
+script:
+  - php artisan key:generate
+  - php artisan serve &
+  - vendor/bin/phpunit --coverage-clover=clover.xml
+  - fossa init
+  - fossa analyze
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
