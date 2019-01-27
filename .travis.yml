@@ -1,0 +1,22 @@
+language: php
+
+php:
+  - '7.3'
+  - '7.2'
+  - '7.1'
+  - nightly
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: nightly
+
+before_script:
+  - cp .env.example .env
+  - travis_retry composer self-update
+  - travis_retry composer install --no-interaction --prefer-source
+  - yarn
+ 
+script:
+  - yarn prod
+  - php artisan key:generate
