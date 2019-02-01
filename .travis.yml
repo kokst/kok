@@ -20,3 +20,4 @@ before_script:
 script:
   - yarn prod
   - php artisan key:generate
+  - vendor/bin/homestead make

@@ -21,5 +21,17 @@ yarn --no-bin-links
 yarn prod
 ```
 
+
+### Development
+Adjust `Homestead.yaml` if necessary
+
+```
+vagrant box add laravel/homestead
+```
+
+```
+vagrant up
+```
+
 ### License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkokst%2Fkok.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkokst%2Fkok?ref=badge_large)
