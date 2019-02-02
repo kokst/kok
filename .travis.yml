@@ -17,9 +17,10 @@ before_script:
  
 script:
   - php artisan key:generate
-  - vendor/bin/phpunit --coverage-clover=clover.xml
-  - vendor/bin/homestead make
   - yarn prod
+  - vendor/bin/homestead make
+  - vendor/bin/phpunit --coverage-clover=clover.xml
+  - find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
