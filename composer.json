@@ -12,6 +12,7 @@
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
+        "dczajkowski/auth-tests": "^5.7",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "laravel/homestead": "^8.0",
