@@ -16,9 +16,14 @@ before_script:
   - yarn
  
 script:
-  - yarn prod
   - php artisan key:generate
+  - yarn prod
   - vendor/bin/homestead make
+  - vendor/bin/phpunit --coverage-clover=clover.xml
+  - find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 
 cache:
   yarn: true
