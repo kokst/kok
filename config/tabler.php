@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'suffix' => 'Dash',
+    'suffix' => 'Kok',
     'logo' => 'https://preview.tabler.io/demo/brand/tabler.svg',
     'urls' => [
         'logout' => 'logout',
