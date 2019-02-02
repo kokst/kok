@@ -1,7 +1,9 @@
+/.vagrant
 /node_modules
 /public/hot
 /public/storage
 /public/admin
+/public/mix-manifest.json
 /storage/*.key
 /vendor
 .env
