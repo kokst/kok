@@ -23,6 +23,17 @@ yarn prod
 
 
 ### Development
+
+Mac / Linux:
+```
+php vendor/bin/homestead make
+```
+
+Windows:
+```
+vendor\\bin\\homestead make
+```
+
 Adjust `Homestead.yaml` if necessary
 
 ```
