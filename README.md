@@ -44,5 +44,17 @@ vagrant box add laravel/homestead
 vagrant up
 ```
 
+```
+vagrant ssh
+```
+
+```
+cd code
+```
+
+```
+php artisan migrate
+```
+
 ### License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkokst%2Fkok.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkokst%2Fkok?ref=badge_large)
