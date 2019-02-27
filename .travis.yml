@@ -19,6 +19,7 @@ script:
   - php artisan key:generate
   - yarn prod
   - vendor/bin/homestead make
+  - vendor/bin/phpunit vendor/kokst/core
   - vendor/bin/phpunit --coverage-clover=clover.xml
   - find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
 
