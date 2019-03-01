@@ -11,4 +11,4 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.copyDirectory('vendor/tabler/tabler/dist/assets', 'public/admin/assets');
+mix.copyDirectory('node_modules/tabler-ui/dist/assets', 'public/admin/assets');

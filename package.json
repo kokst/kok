@@ -20,6 +20,7 @@
         "resolve-url-loader": "^3.0.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
+        "tabler-ui": "^0.0.32",
         "vue": "^2.6.7"
     }
 }
