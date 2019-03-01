@@ -809,12 +809,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kokst/core.git",
-                "reference": "1848a3f16c2505707cce2b436d49e4005f51b273"
+                "reference": "8b6323c153830eed9c38726c84debfd2a088726b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/1848a3f16c2505707cce2b436d49e4005f51b273",
-                "reference": "1848a3f16c2505707cce2b436d49e4005f51b273",
+                "url": "https://api.github.com/repos/kokst/core/zipball/8b6323c153830eed9c38726c84debfd2a088726b",
+                "reference": "8b6323c153830eed9c38726c84debfd2a088726b",
                 "shasum": ""
             },
             "require": {
@@ -823,7 +823,6 @@
                 "laravolt/avatar": "^2.1",
                 "lavary/laravel-menu": "^1.7",
                 "nwidart/laravel-modules": "^4.0",
-                "tabler/tabler": "^0.0.32",
                 "thecodingmachine/safe": "^0.1.11"
             },
             "require-dev": {
@@ -853,7 +852,7 @@
                 }
             ],
             "description": "Core Module",
-            "time": "2019-02-27T19:17:49+00:00"
+            "time": "2019-03-01T08:59:20+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3082,7 +3081,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -3483,34 +3482,6 @@
                 "dump"
             ],
             "time": "2019-01-30T11:44:30+00:00"
-        },
-        {
-            "name": "tabler/tabler",
-            "version": "v0.0.32",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tabler/tabler.git",
-                "reference": "a811ad1489360d0d443d9e8a0d1a0c292777c4a6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tabler/tabler/zipball/a811ad1489360d0d443d9e8a0d1a0c292777c4a6",
-                "reference": "a811ad1489360d0d443d9e8a0d1a0c292777c4a6",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "codecalm",
-                    "email": "codecalm@gmail.com"
-                }
-            ],
-            "description": "Premium and Open Source dashboard template with responsive and high quality UI. For Free!",
-            "time": "2018-04-16T07:29:07+00:00"
         },
         {
             "name": "thecodingmachine/safe",
@@ -5745,6 +5716,34 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-01-16T20:35:37+00:00"
+        },
+        {
+            "name": "tabler/tabler",
+            "version": "v0.0.32",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tabler/tabler.git",
+                "reference": "a811ad1489360d0d443d9e8a0d1a0c292777c4a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tabler/tabler/zipball/a811ad1489360d0d443d9e8a0d1a0c292777c4a6",
+                "reference": "a811ad1489360d0d443d9e8a0d1a0c292777c4a6",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codecalm",
+                    "email": "codecalm@gmail.com"
+                }
+            ],
+            "description": "Premium and Open Source dashboard template with responsive and high quality UI. For Free!",
+            "time": "2018-04-16T07:29:07+00:00"
         },
         {
             "name": "theseer/tokenizer",
