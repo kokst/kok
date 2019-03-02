@@ -48,6 +48,6 @@
     </div>
     {!! Form::close() !!}
     <div class="text-center text-muted">
-        @lang('register.have-account') <a href="{!! url(config('tabler.url.login-url', 'login')) !!}">@lang('register.login')</a>
+        <a href="{!! url(config('tabler.url.login-url', 'login')) !!}">@lang('register.login')</a>
     </div>
 @stop

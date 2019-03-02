@@ -27,6 +27,6 @@
     </div>
     {!! Form::close() !!}
     <div class="text-center text-muted">
-        @lang('login.no-account') <a href="{!! url(config('tabler.url.register', 'register')) !!}">@lang('login.register')</a>
+        <a href="{!! url(config('tabler.url.register', 'register')) !!}">@lang('login.register')</a>
     </div>
 @stop

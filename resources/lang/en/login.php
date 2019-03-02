@@ -9,6 +9,5 @@ return [
     'password-placeholder' => '********',
     'remeber-me' => 'Remember me',
     'signin' => 'Sign in',
-    'register' => 'Sign up',
-    'no-account' => 'Don\'t have account? '
+    'register' => 'Create account',
 ];
