@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6bae813440427f455edec27ed726aea2",
+    "content-hash": "dce2ef51ccdc44312fe3c78d83c55e80",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -802,57 +802,6 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
-        },
-        {
-            "name": "kokst/core",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kokst/core.git",
-                "reference": "8b6323c153830eed9c38726c84debfd2a088726b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/8b6323c153830eed9c38726c84debfd2a088726b",
-                "reference": "8b6323c153830eed9c38726c84debfd2a088726b",
-                "shasum": ""
-            },
-            "require": {
-                "ecrmnn/laravel-https": "^1.0",
-                "laravelcollective/html": "^5.7",
-                "laravolt/avatar": "^2.1",
-                "lavary/laravel-menu": "^1.7",
-                "nwidart/laravel-modules": "^4.0",
-                "thecodingmachine/safe": "^0.1.11"
-            },
-            "require-dev": {
-                "laravel/homestead": "^8.1",
-                "orchestra/testbench": "~3.0",
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Kokst\\Core\\Providers\\CoreServiceProvider"
-                    ],
-                    "aliases": []
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Kokst\\Core\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Nikolas Evers",
-                    "email": "hello@nikol.as"
-                }
-            ],
-            "description": "Core Module",
-            "time": "2019-03-01T08:59:20+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3081,7 +3030,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -4324,120 +4273,6 @@
                 "symfony"
             ],
             "time": "2018-11-21T21:40:54+00:00"
-        },
-        {
-            "name": "orchestra/testbench",
-            "version": "v3.7.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/orchestral/testbench.git",
-                "reference": "57c9dc9271e60421b8402f477c44589156fb67b6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/57c9dc9271e60421b8402f477c44589156fb67b6",
-                "reference": "57c9dc9271e60421b8402f477c44589156fb67b6",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "~5.7.14",
-                "mockery/mockery": "^1.0",
-                "orchestra/testbench-core": "~3.7.7",
-                "php": ">=7.1",
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mior Muhammad Zaki",
-                    "email": "crynobone@gmail.com",
-                    "homepage": "https://github.com/crynobone"
-                }
-            ],
-            "description": "Laravel Testing Helper for Packages Development",
-            "homepage": "http://orchestraplatform.com/docs/latest/components/testbench/",
-            "keywords": [
-                "BDD",
-                "TDD",
-                "laravel",
-                "orchestra-platform",
-                "orchestral",
-                "testing"
-            ],
-            "time": "2018-12-04T01:01:32+00:00"
-        },
-        {
-            "name": "orchestra/testbench-core",
-            "version": "v3.7.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "b5c97f3f3ae488c9e92196c2a7fcf3def9d23e36"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/b5c97f3f3ae488c9e92196c2a7fcf3def9d23e36",
-                "reference": "b5c97f3f3ae488c9e92196c2a7fcf3def9d23e36",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "^1.4",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "laravel/framework": "~5.7.14",
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^7.0"
-            },
-            "suggest": {
-                "laravel/framework": "Required for testing (~5.7.14).",
-                "mockery/mockery": "Allow to use Mockery for testing (^1.0).",
-                "orchestra/testbench-browser-kit": "Allow to use legacy Laravel BrowserKit for testing (~3.7).",
-                "orchestra/testbench-dusk": "Allow to use Laravel Dusk for testing (~3.7).",
-                "phpunit/phpunit": "Allow to use PHPUnit for testing (^7.0)."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Orchestra\\Testbench\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mior Muhammad Zaki",
-                    "email": "crynobone@gmail.com",
-                    "homepage": "https://github.com/crynobone"
-                }
-            ],
-            "description": "Testing Helper for Laravel Development",
-            "homepage": "http://orchestraplatform.com/docs/latest/components/testbench/",
-            "keywords": [
-                "BDD",
-                "TDD",
-                "laravel",
-                "orchestra-platform",
-                "orchestral",
-                "testing"
-            ],
-            "time": "2018-12-04T00:47:44+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -5718,34 +5553,6 @@
             "time": "2019-01-16T20:35:37+00:00"
         },
         {
-            "name": "tabler/tabler",
-            "version": "v0.0.32",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tabler/tabler.git",
-                "reference": "a811ad1489360d0d443d9e8a0d1a0c292777c4a6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tabler/tabler/zipball/a811ad1489360d0d443d9e8a0d1a0c292777c4a6",
-                "reference": "a811ad1489360d0d443d9e8a0d1a0c292777c4a6",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "codecalm",
-                    "email": "codecalm@gmail.com"
-                }
-            ],
-            "description": "Premium and Open Source dashboard template with responsive and high quality UI. For Free!",
-            "time": "2018-04-16T07:29:07+00:00"
-        },
-        {
             "name": "theseer/tokenizer",
             "version": "1.1.0",
             "source": {
@@ -5839,9 +5646,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "kokst/core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
