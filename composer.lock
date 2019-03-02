@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dce2ef51ccdc44312fe3c78d83c55e80",
+    "content-hash": "5bc590183b7c5299da5c4ae5809aab7f",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -4928,6 +4928,61 @@
             "time": "2019-02-18T09:24:50+00:00"
         },
         {
+            "name": "pingecom/l5-tabler",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/baorv/l5-tabler.git",
+                "reference": "a6b5dfd602bfbd7a57540bfce0d5d87bbc828f6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/baorv/l5-tabler/zipball/a6b5dfd602bfbd7a57540bfce0d5d87bbc828f6b",
+                "reference": "a6b5dfd602bfbd7a57540bfce0d5d87bbc828f6b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": ">=5.0",
+                "illuminate/support": ">=5.0",
+                "laravelcollective/html": ">=5.0",
+                "lavary/laravel-menu": ">=1.6.1",
+                "php": ">=5.4.0",
+                "tabler/tabler": "^0.0.32"
+            },
+            "require-dev": {
+                "orchestra/testbench": ">=3.0",
+                "phpunit/phpunit": ">=4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pingecom\\Tabler\\Providers\\TablerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pingecom\\Tabler\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "baorv",
+                    "email": "roanvanbao@gmail.com"
+                }
+            ],
+            "description": "Tabler template for Laravel 5.*",
+            "time": "2019-02-04T01:15:29+00:00"
+        },
+        {
             "name": "sebastian/code-unit-reverse-lookup",
             "version": "1.0.1",
             "source": {
@@ -5551,6 +5606,34 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-01-16T20:35:37+00:00"
+        },
+        {
+            "name": "tabler/tabler",
+            "version": "v0.0.32",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tabler/tabler.git",
+                "reference": "a811ad1489360d0d443d9e8a0d1a0c292777c4a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tabler/tabler/zipball/a811ad1489360d0d443d9e8a0d1a0c292777c4a6",
+                "reference": "a811ad1489360d0d443d9e8a0d1a0c292777c4a6",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codecalm",
+                    "email": "codecalm@gmail.com"
+                }
+            ],
+            "description": "Premium and Open Source dashboard template with responsive and high quality UI. For Free!",
+            "time": "2018-04-16T07:29:07+00:00"
         },
         {
             "name": "theseer/tokenizer",
