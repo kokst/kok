@@ -7,7 +7,7 @@ return [
         'logout' => 'logout',
         'settings' => 'settings',
         'searchUrl' => 'search',
-        'homepage' => '/',
+        'homepage' => 'home',
         'login' => 'login',
         'post-login' => 'login',
         'forgot' => 'password/reset',

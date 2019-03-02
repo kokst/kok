@@ -7,6 +7,6 @@ return [
     'send' => 'Send',
     'password-placeholder' => '*******',
     'password' => 'Password',
-    'password-confirmation' => '*******',
-    'password-confirmation-placeholder' => 'Password confirmation',
+    'password-confirmation' => 'Password confirmation',
+    'password-confirmation-placeholder' => '*******',
 ];

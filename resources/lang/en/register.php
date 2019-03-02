@@ -10,7 +10,6 @@ return [
     'password-confirmation' => 'Password confirmation',
     'password-confirmation-placeholder' => '********',
     'singup' => 'Signup',
-    'login' => 'Signin',
-    'have-account' => 'Have account?',
+    'login' => 'Sign in instead',
     'name' => 'Fullname',
 ];

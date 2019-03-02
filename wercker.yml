@@ -1,0 +1,24 @@
+build:
+  box: vintagesucks/docker-xenial-node10-chrome-php73
+  steps:
+    - script:
+        name: composer
+        code: composer install --no-interaction --prefer-dist
+    - script:
+        name: yarn
+        code: yarn
+    - script:
+        name: prepare
+        code: |
+          cp .env.example .env
+          php artisan key:generate
+          vendor/bin/homestead make
+    - script:
+        name: build
+        code: yarn prod
+    - script:
+        name: phpunit
+        code: ./vendor/bin/phpunit
+    - script:
+        name: logs
+        code: find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
