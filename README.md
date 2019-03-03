@@ -1,8 +1,6 @@
 # Kok (/kɔk/)
 [![Build](https://api.travis-ci.com/kokst/kok.svg?branch=master)](https://travis-ci.com/kokst/kok) [![wercker status](https://app.wercker.com/status/447ced6d7708b6f86ef8abd9806cbb17/s/master "wercker status")](https://app.wercker.com/project/byKey/447ced6d7708b6f86ef8abd9806cbb17) [![codecov](https://codecov.io/gh/kokst/kok/branch/master/graph/badge.svg)](https://codecov.io/gh/kokst/kok) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkokst%2Fkok.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkokst%2Fkok?ref=badge_shield)
 
-> THIS IS A DEVELOPMENT PREVIEW - DO NOT USE IT IN PRODUCTION!
-
 ### Setup
 Create a new Kok project by issuing the following commands in your terminal:
 ```
