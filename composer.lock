@@ -1033,16 +1033,16 @@
         },
         {
             "name": "lavary/laravel-menu",
-            "version": "v1.7.3",
+            "version": "v1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lavary/laravel-menu.git",
-                "reference": "a301b61093aca4f7de67a966b6ddfd8cf2296695"
+                "reference": "f2ae50cea31776bd01d71b472229f9b23688b62e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lavary/laravel-menu/zipball/a301b61093aca4f7de67a966b6ddfd8cf2296695",
-                "reference": "a301b61093aca4f7de67a966b6ddfd8cf2296695",
+                "url": "https://api.github.com/repos/lavary/laravel-menu/zipball/f2ae50cea31776bd01d71b472229f9b23688b62e",
+                "reference": "f2ae50cea31776bd01d71b472229f9b23688b62e",
                 "shasum": ""
             },
             "require": {
@@ -1081,7 +1081,7 @@
             "keywords": [
                 "laravel"
             ],
-            "time": "2018-12-07T17:24:41+00:00"
+            "time": "2019-03-26T15:43:19+00:00"
         },
         {
             "name": "league/flysystem",
