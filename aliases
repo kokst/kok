@@ -24,6 +24,9 @@ alias yrwp="yarn run watch-poll"
 alias yrh="yarn run hot"
 alias yrp="yarn run production"
 
+alias phpstan='php artisan code:analyse --level=max'
+alias codestyle='php artisan fixer:fix'
+
 function artisan() {
     php artisan "$@"
 }
