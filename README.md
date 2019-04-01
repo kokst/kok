@@ -56,7 +56,9 @@ php artisan migrate
 
 ### Xdebug + VS Code
 
-VS Code Extension: [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
+VS Code Extension: [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)    
+Chrome Extension: [Xdebug helper](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc)    
+Firefox Extension: [Xdebug Helper](https://addons.mozilla.org/en-US/firefox/addon/xdebug-helper-for-firefox/)
 
 ```
 sudo nano /etc/php/7.3/cli/conf.d/10-opcache.ini
