@@ -26,5 +26,8 @@ build:
         name: php-cs-fixer
         code: php artisan fixer:fix --dry-run
     - script:
+        name: Module
+        code: php artisan module:make Wercker
+    - script:
         name: logs
         code: find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
