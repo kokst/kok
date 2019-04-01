@@ -20,5 +20,8 @@ build:
         name: phpunit
         code: ./vendor/bin/phpunit
     - script:
+        name: larastan
+        code: php artisan code:analyse --level=max
+    - script:
         name: logs
         code: find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
