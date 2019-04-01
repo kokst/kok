@@ -54,5 +54,26 @@ cd code
 php artisan migrate
 ```
 
+### Xdebug + VS Code
+
+VS Code Extension: [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
+
+```
+sudo nano /etc/php/7.3/cli/conf.d/10-opcache.ini
+```
+
+```
+xdebug.remote_enable = true
+xdebug.remote_autostart = true
+xdebug.remote_host = 10.0.2.2
+xdebug.remote_port = 9000
+xdebug.remote_log = /var/log/xdebug.log
+xdebug.max_nesting_level = 1000
+```
+
+```
+sudo service php7.3-fpm restart
+```
+
 ### License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkokst%2Fkok.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkokst%2Fkok?ref=badge_large)
