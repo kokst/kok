@@ -23,5 +23,8 @@ build:
         name: larastan
         code: php artisan code:analyse --level=max
     - script:
+        name: php-cs-fixer
+        code: php artisan fixer:fix --dry-run
+    - script:
         name: logs
         code: find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
