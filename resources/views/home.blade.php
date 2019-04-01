@@ -2,6 +2,6 @@
 @section('content')
 
 <p>To create your first module, run</p>
-<pre>php artisan module:make Home</pre>.
+<pre>php artisan module:make Home</pre>
 
 @stop
