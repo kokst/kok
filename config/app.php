@@ -166,6 +166,7 @@ return [
          * Package Service Providers...
          */
         Lavary\Menu\ServiceProvider::class,
+        Ecrmnn\LaravelHttps\Providers\ServiceProvider::class,
 
         /*
          * Application Service Providers...
