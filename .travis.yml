@@ -14,12 +14,13 @@ before_script:
   - cp .env.example .env
   - travis_retry composer install --no-interaction --prefer-dist ${COMPOSER_INSTALL_FLAGS}
   - yarn
- 
+
 script:
   - php artisan key:generate
   - yarn prod
   - vendor/bin/homestead make
   - vendor/bin/phpunit --coverage-clover=clover.xml
+  - php artisan code:analyse --level=max
   - find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
 
 after_success:
