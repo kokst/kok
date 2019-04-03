@@ -78,11 +78,7 @@ class $CLASS$ extends ServiceProvider
     {
         $langPath = resource_path('lang/modules/$LOWER_NAME$');
 
-        if (is_dir($langPath)) {
-            $this->loadTranslationsFrom($langPath, '$LOWER_NAME$');
-        } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../$PATH_LANG$', '$LOWER_NAME$');
-        }
+        $this->loadTranslationsFrom(__DIR__ .'/../$PATH_LANG$', '$LOWER_NAME$');
     }
 
     /**
@@ -95,15 +91,5 @@ class $CLASS$ extends ServiceProvider
         if (! app()->environment('production')) {
             app(Factory::class)->load(__DIR__ . '/../$FACTORIES_PATH$');
         }
-    }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return [];
     }
 }

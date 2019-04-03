@@ -27,6 +27,8 @@ return [
         'path' => base_path() . '/resources/stubs',
         'files' => [
             'http/middleware/DefineMenus' => 'Http/Middleware/DefineMenus.php',
+            'tests/feature/IndexTest' => 'Tests/Feature/IndexTest.php',
+            'lang/en/index' => 'Resources/lang/en/index.php',
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',
             'views/index' => 'Resources/views/index.blade.php',
@@ -39,6 +41,7 @@ return [
         ],
         'replacements' => [
             'http/middleware/DefineMenus' => ['STUDLY_NAME'],
+            'tests/feature/IndexTest' => ['LOWER_NAME', 'STUDLY_NAME'],
             'routes/web' => ['LOWER_NAME', 'STUDLY_NAME'],
             'routes/api' => ['LOWER_NAME'],
             'webpack' => ['LOWER_NAME'],
