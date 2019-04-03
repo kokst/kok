@@ -152,7 +152,7 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'Kokst',
+        'vendor' => 'kokst',
         'author' => [
             'name' => 'Example author',
             'email' => 'hello@example.com',
