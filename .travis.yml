@@ -19,10 +19,10 @@ script:
   - php artisan key:generate
   - yarn prod
   - vendor/bin/homestead make
+  - php artisan module:make Home
   - vendor/bin/phpunit --coverage-clover=clover.xml
   - php artisan code:analyse --level=max
   - php artisan fixer:fix --dry-run
-  - php artisan module:make Test
   - find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
 
 after_success:
