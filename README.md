@@ -69,7 +69,6 @@ xdebug.remote_enable = true
 xdebug.remote_autostart = true
 xdebug.remote_host = 10.0.2.2
 xdebug.remote_port = 9000
-xdebug.remote_log = /var/log/xdebug.log
 xdebug.max_nesting_level = 1000
 ```
 
