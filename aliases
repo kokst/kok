@@ -26,6 +26,7 @@ alias yrp="yarn run production"
 
 alias phpstan='php artisan code:analyse --level=max --paths="app,Modules"'
 alias codestyle='php artisan fixer:fix'
+alias codecov='phpunit --coverage-html tests/report/'
 
 function artisan() {
     php artisan "$@"
