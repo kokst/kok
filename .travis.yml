@@ -20,7 +20,6 @@ script:
   - yarn prod
   - vendor/bin/homestead make
   - php artisan module:make Home
-  - vendor/bin/phpunit --list-tests
   - vendor/bin/phpunit --coverage-clover=clover.xml
   - php artisan code:analyse --level=max --paths="app,Modules"
   - php artisan fixer:fix --dry-run
