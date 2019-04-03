@@ -9,7 +9,8 @@ class DefineMenus
 {
     public function handle($request, Closure $next)
     {
-        $menu = Menu::get('primary') ?? Menu::make('primary', function(){});
+        $menu = Menu::get('primary') ?? Menu::make('primary', function () {
+        });
 
         $menu->add('$STUDLY_NAME$', ['action' => '\Modules\$STUDLY_NAME$\Http\Controllers\$STUDLY_NAME$Controller@index']);
 

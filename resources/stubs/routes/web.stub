@@ -11,6 +11,6 @@
 |
 */
 
-Route::group(['prefix' => '$LOWER_NAME$',  'middleware' => 'auth'], function() {
+Route::group(['prefix' => '$LOWER_NAME$',  'middleware' => 'auth'], function () {
     Route::get('/', '$STUDLY_NAME$Controller@index')->name('$LOWER_NAME$.index');
 });

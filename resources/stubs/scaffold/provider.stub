@@ -45,7 +45,8 @@ class $CLASS$ extends ServiceProvider
             __DIR__.'/../$PATH_CONFIG$/config.php' => config_path('$LOWER_NAME$.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            __DIR__.'/../$PATH_CONFIG$/config.php', '$LOWER_NAME$'
+            __DIR__.'/../$PATH_CONFIG$/config.php',
+            '$LOWER_NAME$'
         );
     }
 
@@ -62,7 +63,7 @@ class $CLASS$ extends ServiceProvider
 
         $this->publishes([
             $sourcePath => $viewPath
-        ],'views');
+        ], 'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
             return $path . '/modules/$LOWER_NAME$';
