@@ -17,9 +17,6 @@ build:
         name: build
         code: yarn prod
     - script:
-        name: Home Module
-        code: php artisan module:make Home
-    - script:
         name: phpunit
         code: ./vendor/bin/phpunit
     - script:

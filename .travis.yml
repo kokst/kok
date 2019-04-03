@@ -19,9 +19,7 @@ script:
   - php artisan key:generate
   - yarn prod
   - vendor/bin/homestead make
-  - php artisan module:make Home
   - vendor/bin/phpunit --coverage-clover=clover.xml
-  - cat clover.xml
   - php artisan code:analyse --level=max --paths="app,Modules"
   - php artisan fixer:fix --dry-run
   - find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
