@@ -1,0 +1,24 @@
+{
+    "name": "kokst/home",
+    "description": "Home Module",
+    "authors": [
+        {
+            "name": "Nikolas Evers"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Home\\Providers\\HomeServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Home\\": ""
+        }
+    }
+}

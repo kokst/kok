@@ -31,7 +31,7 @@ class ForgotPasswordTest extends TestCase
 
     protected function guestMiddlewareRoute()
     {
-        return route('home');
+        return route('home.index');
     }
 
     public function testUserCanViewAnEmailPasswordForm()

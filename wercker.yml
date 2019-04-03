@@ -21,7 +21,7 @@ build:
         code: ./vendor/bin/phpunit
     - script:
         name: larastan
-        code: php artisan code:analyse --level=max
+        code: php artisan code:analyse --level=max --paths="app,Modules"
     - script:
         name: php-cs-fixer
         code: php artisan fixer:fix --dry-run

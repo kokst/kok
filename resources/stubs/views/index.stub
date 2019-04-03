@@ -1,0 +1,9 @@
+@extends('tabler.layouts.main')
+
+@section('content')
+    <h1>@lang('home::index.title')</h1>
+
+    <p>
+        @lang('home::index.text'): {!! config('$LOWER_NAME$.name') !!}
+    </p>
+@stop

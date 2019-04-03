@@ -1,19 +1,19 @@
 <?php
 
-namespace Tests\Feature;
+namespace Modules\Home\Tests\Feature;
 
 use App\User;
 use Tests\TestCase;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class HomeTest extends TestCase
+class IndexTest extends TestCase
 {
     use RefreshDatabase;
 
-    protected function homeRoute()
+    protected function indexRoute()
     {
-        return route('home');
+        return route('home.index');
     }
 
     protected function loginGetRoute()
@@ -28,11 +28,11 @@ class HomeTest extends TestCase
 
     public function testRedirectToLoginIfNotAuthenticated()
     {
-        $response = $this->get($this->homeRoute());
+        $response = $this->get($this->indexRoute());
         $response->assertRedirect($this->loginGetRoute());
     }
 
-    public function testUserCanViewHomeIfAuthenticated()
+    public function testUserCanViewIndexIfAuthenticated()
     {
         $user = factory(User::class)->create([
             'password' => Hash::make($password = 'i-love-laravel'),
@@ -43,10 +43,10 @@ class HomeTest extends TestCase
             'password' => $password,
         ]);
 
-        $response->assertRedirect($this->homeRoute());
+        $response->assertRedirect($this->indexRoute());
         $this->assertAuthenticatedAs($user);
 
-        $response = $this->get($this->homeRoute());
+        $response = $this->get($this->indexRoute());
         $response->assertStatus(200);
     }
 }

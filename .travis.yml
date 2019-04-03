@@ -20,7 +20,7 @@ script:
   - yarn prod
   - vendor/bin/homestead make
   - vendor/bin/phpunit --coverage-clover=clover.xml
-  - php artisan code:analyse --level=max
+  - php artisan code:analyse --level=max --paths="app,Modules"
   - php artisan fixer:fix --dry-run
   - find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
 

@@ -1,0 +1,14 @@
+{
+    "name": "Home",
+    "alias": "home",
+    "description": "Home Module",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Home\\Providers\\HomeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

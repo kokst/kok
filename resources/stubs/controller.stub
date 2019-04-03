@@ -1,0 +1,19 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use Illuminate\View\View;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+
+class $CLASS$ extends Controller
+{
+    /**
+     * Display the index view of the module.
+     * @return View
+     */
+    public function index()
+    {
+        return view('$LOWER_NAME$::index');
+    }
+}
