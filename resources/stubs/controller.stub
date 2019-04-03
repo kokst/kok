@@ -2,15 +2,15 @@
 
 namespace $CLASS_NAMESPACE$;
 
+use Illuminate\View\View;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
 class $CLASS$ extends Controller
 {
     /**
-     * Display a listing of the resource.
-     * @return Response
+     * Display the index view of the module.
+     * @return View
      */
     public function index()
     {
