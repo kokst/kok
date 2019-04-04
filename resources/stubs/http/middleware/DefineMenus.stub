@@ -12,7 +12,7 @@ class DefineMenus
         $menu = Menu::get('primary') ?? Menu::make('primary', function () {
         });
 
-        $menu->add('$STUDLY_NAME$', ['action' => '\Modules\$STUDLY_NAME$\Http\Controllers\$STUDLY_NAME$Controller@index']);
+        $menu->add(strval(__('$LOWER_NAME$::index.title')), ['action' => '\Modules\$STUDLY_NAME$\Http\Controllers\$STUDLY_NAME$Controller@index']);
 
         return $next($request);
     }

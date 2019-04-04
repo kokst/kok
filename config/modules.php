@@ -40,13 +40,14 @@ return [
             'package' => 'package.json',
         ],
         'replacements' => [
-            'http/middleware/DefineMenus' => ['STUDLY_NAME'],
+            'http/middleware/DefineMenus' => ['LOWER_NAME', 'STUDLY_NAME'],
             'tests/feature/IndexTest' => ['LOWER_NAME', 'STUDLY_NAME'],
+            'lang/en/index' => ['STUDLY_NAME'],
             'routes/web' => ['LOWER_NAME', 'STUDLY_NAME'],
             'routes/api' => ['LOWER_NAME'],
             'webpack' => ['LOWER_NAME'],
             'json' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
-            'views/index' => ['LOWER_NAME'],
+            'views/index' => ['LOWER_NAME', 'STUDLY_NAME'],
             'views/master' => ['LOWER_NAME', 'STUDLY_NAME'],
             'scaffold/config' => ['STUDLY_NAME'],
             'composer' => [
