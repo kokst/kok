@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'title' => 'Hello World',
+    'title' => 'Home',
     'text' => 'This view is loaded from module',
 ];
