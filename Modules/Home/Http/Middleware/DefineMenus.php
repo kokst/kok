@@ -12,7 +12,7 @@ class DefineMenus
         $menu = Menu::get('primary') ?? Menu::make('primary', function () {
         });
 
-        $menu->add('Home', ['action' => '\Modules\Home\Http\Controllers\HomeController@index']);
+        $menu->add(strval(__('home::index.title')), ['action' => '\Modules\Home\Http\Controllers\HomeController@index']);
 
         return $next($request);
     }

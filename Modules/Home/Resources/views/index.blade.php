@@ -1,8 +1,10 @@
 @extends('tabler.layouts.main')
 
-@section('content')
-    <h1>@lang('home::index.title')</h1>
+@section('title')
+    @lang('home::index.title')
+@stop
 
+@section('content')
     <p>
         @lang('home::index.text'): {!! config('home.name') !!}
     </p>
