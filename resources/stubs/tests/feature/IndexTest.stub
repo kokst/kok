@@ -16,6 +16,11 @@ class IndexTest extends TestCase
         return route('$LOWER_NAME$.index');
     }
 
+    protected function homeRoute()
+    {
+        return route('home.index');
+    }
+
     protected function loginGetRoute()
     {
         return route('login');
@@ -43,7 +48,7 @@ class IndexTest extends TestCase
             'password' => $password,
         ]);
 
-        $response->assertRedirect($this->indexRoute());
+        $response->assertRedirect($this->homeRoute());
         $this->assertAuthenticatedAs($user);
 
         $response = $this->get($this->indexRoute());
