@@ -13,7 +13,7 @@ class IndexTest extends TestCase
 
     protected function indexRoute()
     {
-        return route('$LOWER_NAME$.index');
+        return route('home.index');
     }
 
     protected function loginGetRoute()
