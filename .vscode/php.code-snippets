@@ -1,0 +1,12 @@
+{
+	"function": {
+        "prefix": "met",
+        "body": [
+            "public function ${1}()",
+            "{",
+            "    ${2}",
+            "}"
+        ],
+        "description": "PHP Public Method"
+    }
+}
