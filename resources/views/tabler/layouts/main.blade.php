@@ -20,7 +20,7 @@
     <script src="{{ asset('admin/assets/js/require.min.js') }}"></script>
     <script>
         requirejs.config({
-            baseUrl: './admin'
+            baseUrl: '/admin'
         });
     </script>
     <script src="{{ asset('admin/assets/js/dashboard.js') }}"></script>
