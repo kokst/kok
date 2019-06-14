@@ -3,11 +3,15 @@ language: php
 matrix:
   fast_finish: true
   include:
-    - php: 7.3
     - php: 7.2
+      env: PHPUNIT_FLAGS=--coverage-clover=clover.xml
+    - php: 7.3
+      env: PHPUNIT_FLAGS=--coverage-clover=clover.xml
+    - php: 7.4snapshot
     - php: nightly
       env: COMPOSER_INSTALL_FLAGS=--ignore-platform-reqs
   allow_failures:
+    - php: 7.4snapshot
     - php: nightly
 
 before_script:
@@ -19,7 +23,7 @@ script:
   - php artisan key:generate
   - yarn prod
   - vendor/bin/homestead make
-  - vendor/bin/phpunit --coverage-clover=clover.xml
+  - vendor/bin/phpunit ${PHPUNIT_FLAGS}
   - php artisan code:analyse --level=max --paths="app,Modules"
   - php artisan fixer:fix --dry-run
   - find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
