@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85b71600f39e9338b35881e039946ad8",
+    "content-hash": "ef0d26489135ba791ba6b09f1d676c94",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -691,6 +691,46 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "kokst/core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kokst/core.git",
+                "reference": "50a622131301e473eb428cf7e831d6ab98e187cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kokst/core/zipball/50a622131301e473eb428cf7e831d6ab98e187cf",
+                "reference": "50a622131301e473eb428cf7e831d6ab98e187cf",
+                "shasum": ""
+            },
+            "require": {
+                "tabler/tabler": "0.0.33"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Kokst\\Core\\Providers\\CoreServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kokst\\Core\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Nikolas Evers",
+                    "email": "hello@nikol.as"
+                }
+            ],
+            "description": "Kok Core",
+            "time": "2019-06-19T15:27:49+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2589,7 +2629,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -3110,6 +3150,34 @@
                 "dump"
             ],
             "time": "2019-02-23T15:17:42+00:00"
+        },
+        {
+            "name": "tabler/tabler",
+            "version": "v0.0.33",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tabler/tabler.git",
+                "reference": "67f4685bbd67040420448d426ff2aa7313ab3b78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tabler/tabler/zipball/67f4685bbd67040420448d426ff2aa7313ab3b78",
+                "reference": "67f4685bbd67040420448d426ff2aa7313ab3b78",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codecalm",
+                    "email": "codecalm@gmail.com"
+                }
+            ],
+            "description": "Premium and Open Source dashboard template with responsive and high quality UI. For Free!",
+            "time": "2019-04-04T14:08:49+00:00"
         },
         {
             "name": "thecodingmachine/safe",
@@ -6765,7 +6833,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "kokst/core": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
