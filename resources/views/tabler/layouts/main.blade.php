@@ -28,7 +28,7 @@
 </head>
 <body>
 <div class="page">
-    <div class="page-main">
+    <div class="flex-fill">
         <div class="header py-4">
             <div class="container">
                 <div class="d-flex">
