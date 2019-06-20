@@ -1,6 +1,0 @@
-<?php
-
-return [
-    'title' => '$STUDLY_NAME$',
-    'text' => 'This view is loaded from module',
-];
