@@ -698,12 +698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kokst/core.git",
-                "reference": "abd69b438d01b5310b0d774721eda8b67219a453"
+                "reference": "eae21feab1930c21f313cad6a635ea2e78f48d1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/abd69b438d01b5310b0d774721eda8b67219a453",
-                "reference": "abd69b438d01b5310b0d774721eda8b67219a453",
+                "url": "https://api.github.com/repos/kokst/core/zipball/eae21feab1930c21f313cad6a635ea2e78f48d1c",
+                "reference": "eae21feab1930c21f313cad6a635ea2e78f48d1c",
                 "shasum": ""
             },
             "require": {
@@ -734,7 +734,7 @@
                 }
             ],
             "description": "Kok Core",
-            "time": "2019-06-20T00:29:55+00:00"
+            "time": "2019-06-20T01:34:04+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3253,16 +3253,16 @@
         },
         {
             "name": "thecodingmachine/safe",
-            "version": "v0.1.14",
+            "version": "v0.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/safe.git",
-                "reference": "67b654c7effeda8db27c133e5f0cbb638e90d1e4"
+                "reference": "9a4dbc54e397e0bfb152f4b38f8a03040a1e9e3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/67b654c7effeda8db27c133e5f0cbb638e90d1e4",
-                "reference": "67b654c7effeda8db27c133e5f0cbb638e90d1e4",
+                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/9a4dbc54e397e0bfb152f4b38f8a03040a1e9e3e",
+                "reference": "9a4dbc54e397e0bfb152f4b38f8a03040a1e9e3e",
                 "shasum": ""
             },
             "require": {
@@ -3381,7 +3381,7 @@
                 "MIT"
             ],
             "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
-            "time": "2019-03-07T11:09:21+00:00"
+            "time": "2019-04-17T16:09:50+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
