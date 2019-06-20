@@ -698,12 +698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kokst/core.git",
-                "reference": "abd69b438d01b5310b0d774721eda8b67219a453"
+                "reference": "eae21feab1930c21f313cad6a635ea2e78f48d1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/abd69b438d01b5310b0d774721eda8b67219a453",
-                "reference": "abd69b438d01b5310b0d774721eda8b67219a453",
+                "url": "https://api.github.com/repos/kokst/core/zipball/eae21feab1930c21f313cad6a635ea2e78f48d1c",
+                "reference": "eae21feab1930c21f313cad6a635ea2e78f48d1c",
                 "shasum": ""
             },
             "require": {
@@ -734,7 +734,7 @@
                 }
             ],
             "description": "Kok Core",
-            "time": "2019-06-20T00:29:55+00:00"
+            "time": "2019-06-20T01:34:04+00:00"
         },
         {
             "name": "laravel/framework",
