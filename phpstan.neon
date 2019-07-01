@@ -5,3 +5,10 @@ includes:
 parameters:
 	autoload_directories:
 	    - %rootDir%/../../../Modules
+
+parameters:
+    autoload_directories:
+        - %rootDir%/../../../Modules
+
+    excludes_analyse:
+        - %rootDir%/../../../Modules/*/Database/factories/*.php
