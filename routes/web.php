@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect()->route('login');
-});
+Route::redirect('/', '/login', 302);
 
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
