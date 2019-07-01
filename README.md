@@ -61,7 +61,7 @@ Chrome Extension: [Xdebug helper](https://chrome.google.com/webstore/detail/xdeb
 Firefox Extension: [Xdebug Helper](https://addons.mozilla.org/en-US/firefox/addon/xdebug-helper-for-firefox/)
 
 ```
-sudo nano /etc/php/7.3/cli/conf.d/10-opcache.ini
+sudo nano /etc/php/7.3/cli/conf.d/20-xdebug.ini
 ```
 
 ```
