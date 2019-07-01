@@ -21,10 +21,13 @@ build:
         code: ./vendor/bin/phpunit
     - script:
         name: larastan
-        code: php artisan code:analyse --level=max --paths="app,Modules"
+        code: php artisan code:analyse --level=5 --paths="app,Modules"
     - script:
         name: php-cs-fixer
-        code: php artisan fixer:fix --dry-run
+        code: php artisan fixer:fix --dry-run --diff
+    - script:
+        name: route:cache
+        code: php artisan route:cache
     - script:
         name: logs
         code: find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
