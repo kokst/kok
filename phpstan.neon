@@ -3,5 +3,8 @@ includes:
     - vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
 
 parameters:
-	autoload_directories:
-	    - %rootDir%/../../../Modules
+    autoload_directories:
+        - %rootDir%/../../../Modules
+
+    excludes_analyse:
+        - %rootDir%/../../../Modules/*/Database/factories/*.php
