@@ -19,18 +19,25 @@ yarn --no-bin-links
 yarn prod
 ```
 
-
 ### Development
 
-Mac / Linux:
+Mac:
 ```
 php vendor/bin/homestead make
 ```
 
+Also make sure that NFS over UDP [is turned on](https://github.com/laravel/homestead/issues/779#issuecomment-363380402).
+
+---
+
 Windows:
 ```
 vendor\\bin\\homestead make
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-winnfsd
 ```
+
+---
 
 Adjust `Homestead.yaml` if necessary
 
@@ -51,7 +58,7 @@ cd code
 ```
 
 ```
-php artisan migrate
+artisan migrate
 ```
 
 ### Xdebug + VS Code
