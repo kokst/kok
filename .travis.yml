@@ -24,8 +24,9 @@ script:
   - yarn prod
   - vendor/bin/homestead make
   - vendor/bin/phpunit ${PHPUNIT_FLAGS}
-  - php artisan code:analyse --level=max --paths="app,Modules"
-  - php artisan fixer:fix --dry-run
+  - php artisan code:analyse --level=5 --paths="app,Modules"
+  - php artisan fixer:fix --dry-run --diff
+  - php artisan route:cache
   - find ./storage/logs -maxdepth 1 -name "*.log" -print -exec cat {} \;
 
 after_success:

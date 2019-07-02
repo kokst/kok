@@ -24,8 +24,13 @@ alias yrwp="yarn run watch-poll"
 alias yrh="yarn run hot"
 alias yrp="yarn run production"
 
-alias phpstan='php artisan code:analyse --level=max --paths="app,Modules"'
+alias stan='php artisan code:analyse --level=5 --paths="app,Modules"'
+alias phpstan='stan'
+alias larastan='stan'
+
 alias codestyle='php artisan fixer:fix'
+alias csd='codestyle --dry-run --diff'
+
 alias codecov='phpunit --coverage-html tests/report/'
 
 function artisan() {
