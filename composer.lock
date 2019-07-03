@@ -703,20 +703,86 @@
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
+            "name": "jenssegers/date",
+            "version": "v3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/date.git",
+                "reference": "58393b0544fc2525b3fcd02aa4c989857107e05a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/date/zipball/58393b0544fc2525b3fcd02aa4c989857107e05a",
+                "reference": "58393b0544fc2525b3fcd02aa4c989857107e05a",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "^1.0|^2.0",
+                "php": ">=5.6",
+                "symfony/translation": "^2.7|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0|^6.0|^7.0",
+                "satooshi/php-coveralls": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jenssegers\\Date\\DateServiceProvider"
+                    ],
+                    "aliases": {
+                        "Date": "Jenssegers\\Date\\Date"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Date\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "A date library to help you work with dates in different languages",
+            "homepage": "https://github.com/jenssegers/date",
+            "keywords": [
+                "carbon",
+                "date",
+                "datetime",
+                "i18n",
+                "laravel",
+                "time",
+                "translation"
+            ],
+            "time": "2019-03-10T08:50:58+00:00"
+        },
+        {
             "name": "kokst/core",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kokst/core.git",
-                "reference": "eae21feab1930c21f313cad6a635ea2e78f48d1c"
+                "reference": "62b0b909bd6ec106a453c228b426085f7ee632a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/eae21feab1930c21f313cad6a635ea2e78f48d1c",
-                "reference": "eae21feab1930c21f313cad6a635ea2e78f48d1c",
+                "url": "https://api.github.com/repos/kokst/core/zipball/62b0b909bd6ec106a453c228b426085f7ee632a4",
+                "reference": "62b0b909bd6ec106a453c228b426085f7ee632a4",
                 "shasum": ""
             },
             "require": {
+                "jenssegers/date": "^3.5",
                 "mccool/laravel-auto-presenter": "^7.2",
                 "tabler/tabler": "0.0.33"
             },
@@ -744,7 +810,7 @@
                 }
             ],
             "description": "Kok Core",
-            "time": "2019-06-20T01:34:04+00:00"
+            "time": "2019-07-03T10:42:37+00:00"
         },
         {
             "name": "laravel/framework",
