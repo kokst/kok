@@ -1,10 +1,10 @@
 {
     "name": "Home",
     "alias": "home",
-    "description": "Home Module",
+    "description": "",
     "keywords": [],
     "active": 1,
-    "order": 0,
+    "order": 1,
     "providers": [
         "Modules\\Home\\Providers\\HomeServiceProvider"
     ],
