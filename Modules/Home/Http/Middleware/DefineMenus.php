@@ -7,7 +7,7 @@ use Lavary\Menu\Facade as Menu;
 
 class DefineMenus
 {
-    public function handle($request, Closure $next)
+    public function handle($request, Closure $next): object
     {
         $menu = Menu::get('primary') ?? Menu::make('primary', function () {
         });

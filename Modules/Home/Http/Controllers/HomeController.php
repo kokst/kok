@@ -3,7 +3,6 @@
 namespace Modules\Home\Http\Controllers;
 
 use Illuminate\View\View;
-use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
 class HomeController extends Controller

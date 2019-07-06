@@ -18,7 +18,7 @@ class HomeServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->registerFactories();
-        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
 
         $kernel = $this->app->make('Illuminate\Contracts\Http\Kernel');
         $kernel->pushMiddleware('Modules\Home\Http\Middleware\DefineMenus');
@@ -62,11 +62,11 @@ class HomeServiceProvider extends ServiceProvider
         $sourcePath = __DIR__.'/../Resources/views';
 
         $this->publishes([
-            $sourcePath => $viewPath
+            $sourcePath => $viewPath,
         ], 'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
-            return $path . '/modules/home';
+            return $path.'/modules/home';
         }, \Config::get('view.paths')), [$sourcePath]), 'home');
     }
 
@@ -79,7 +79,7 @@ class HomeServiceProvider extends ServiceProvider
     {
         $langPath = resource_path('lang/modules/home');
 
-        $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'home');
+        $this->loadTranslationsFrom(__DIR__.'/../Resources/lang', 'home');
     }
 
     /**
@@ -90,7 +90,7 @@ class HomeServiceProvider extends ServiceProvider
     public function registerFactories()
     {
         if (! app()->environment('production')) {
-            app(Factory::class)->load(__DIR__ . '/../Database/factories');
+            app(Factory::class)->load(__DIR__.'/../Database/factories');
         }
     }
 }

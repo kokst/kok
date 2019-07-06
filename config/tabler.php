@@ -14,12 +14,12 @@ return [
         'register' => 'register',
         'post-register' => 'register',
         'post-email' => 'password/email',
-        'post-reset' => 'password/reset'
+        'post-reset' => 'password/reset',
     ],
     'footer' => null,
     'support' => [
         'search' => true,
         'footer' => false,
         'footer-menu' => false,
-    ]
+    ],
 ];
