@@ -2,5 +2,5 @@
 
 return [
     'settings' => 'Settings',
-    'logout' => 'Logout'
+    'logout' => 'Logout',
 ];
