@@ -42,10 +42,6 @@ vagrant plugin install vagrant-winnfsd
 Adjust `Homestead.yaml` if necessary
 
 ```
-vagrant box add laravel/homestead
-```
-
-```
 vagrant up
 ```
 
