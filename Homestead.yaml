@@ -16,5 +16,8 @@ sites:
         to: /home/vagrant/code/public
 databases:
     - homestead
+features:
+    - mariadb: true
+    - webdriver: false
 name: kok
 hostname: kok
