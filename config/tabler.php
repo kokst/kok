@@ -18,7 +18,7 @@ return [
     ],
     'footer' => null,
     'support' => [
-        'search' => true,
+        'search' => false,
         'footer' => false,
         'footer-menu' => false,
     ],
