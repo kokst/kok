@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "254ffbed368a244b7ecac550963c0ff9",
+    "content-hash": "15314b5389d45043538e1058ea6ae400",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -773,12 +773,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kokst/core.git",
-                "reference": "1a69f7f06f422ba9d38374b5b21e4644f35ca88c"
+                "reference": "69ae3faa43ee447a9ef07e6839794b58946e5ff1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/1a69f7f06f422ba9d38374b5b21e4644f35ca88c",
-                "reference": "1a69f7f06f422ba9d38374b5b21e4644f35ca88c",
+                "url": "https://api.github.com/repos/kokst/core/zipball/69ae3faa43ee447a9ef07e6839794b58946e5ff1",
+                "reference": "69ae3faa43ee447a9ef07e6839794b58946e5ff1",
                 "shasum": ""
             },
             "require": {
@@ -810,7 +810,7 @@
                 }
             ],
             "description": "Kok Core",
-            "time": "2019-07-06T18:38:10+00:00"
+            "time": "2019-07-12T13:00:15+00:00"
         },
         {
             "name": "laravel/framework",
