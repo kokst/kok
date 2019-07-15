@@ -35,13 +35,15 @@
                 <span class="custom-control-label">@lang('login.remeber-me')</span>
             </label>
         </div>
-        
+
         <div class="form-footer">
             <button type="submit" class="btn btn-primary btn-block">@lang('login.signin')</button>
         </div>
     </div>
     {!! Form::close() !!}
-    <div class="text-center text-muted">
-        <a href="{!! url(config('tabler.url.register', 'register')) !!}">@lang('login.register')</a>
-    </div>
+    @if (Route::has('register'))
+        <div class="text-center text-muted">
+            <a href="{!! url(config('tabler.url.register', 'register')) !!}">@lang('login.register')</a>
+        </div>
+    @endif
 @stop
