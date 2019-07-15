@@ -26,7 +26,9 @@
         </div>
     </div>
     {!! Form::close() !!}
-    <div class="text-center text-muted">
-        <a href="{!! url(config('tabler.url.register', 'register')) !!}">@lang('login.register')</a>
-    </div>
+    @if (Route::has('register'))
+        <div class="text-center text-muted">
+            <a href="{!! url(config('tabler.url.register', 'register')) !!}">@lang('login.register')</a>
+        </div>
+    @endif
 @stop
