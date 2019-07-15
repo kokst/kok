@@ -30,5 +30,9 @@
         <div class="text-center text-muted">
             <a href="{!! url(config('tabler.url.register', 'register')) !!}">@lang('login.register')</a>
         </div>
+    @else
+        <div class="text-center text-muted">
+            <a href="{!! url(config('tabler.url.login-url', 'login')) !!}">@lang('register.login')</a>
+        </div>
     @endif
 @stop
