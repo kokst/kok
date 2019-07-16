@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col col-login mx-auto">
                     <div class="text-center mb-6">
-                        <img src="{!! config('tabler.logo') !!}" class="h-6" alt="Logo">
+                        <img src="{!! config('tabler.logo') !!}" class="h-6" alt="{!! config('tabler.suffix') !!}">
                     </div>
                     @yield('content')
                 </div>
