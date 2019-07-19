@@ -1,0 +1,57 @@
+<?php
+
+namespace Modules\User\Tests\Feature;
+
+use App\User;
+use Tests\TestCase;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+class IndexTest extends TestCase
+{
+    use RefreshDatabase;
+
+    protected function indexRoute()
+    {
+        return route('user.index');
+    }
+
+    protected function homeRoute()
+    {
+        return route('home.index');
+    }
+
+    protected function loginGetRoute()
+    {
+        return route('login');
+    }
+
+    protected function loginPostRoute()
+    {
+        return route('login');
+    }
+
+    public function testRedirectToLoginIfNotAuthenticated()
+    {
+        $response = $this->get($this->indexRoute());
+        $response->assertRedirect($this->loginGetRoute());
+    }
+
+    public function testUserCanViewIndexIfAuthenticated()
+    {
+        $user = factory(User::class)->create([
+            'password' => Hash::make($password = 'i-love-laravel'),
+        ]);
+
+        $response = $this->post($this->loginPostRoute(), [
+            'email' => $user->email,
+            'password' => $password,
+        ]);
+
+        $response->assertRedirect($this->homeRoute());
+        $this->assertAuthenticatedAs($user);
+
+        $response = $this->get($this->indexRoute());
+        $response->assertStatus(200);
+    }
+}
