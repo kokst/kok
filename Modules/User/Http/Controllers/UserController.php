@@ -106,12 +106,12 @@ class UserController extends Controller
                 'required',
                 'email',
                 Rule::unique('users')->ignore($user->id),
-            ]
+            ],
         ]);
 
         $user->update(request([
             'name',
-            'email'
+            'email',
         ]));
 
         return redirect('/user');

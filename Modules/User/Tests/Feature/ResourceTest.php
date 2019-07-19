@@ -153,11 +153,11 @@ class ResourceTest extends TestCase
         $userToUpdate = User::first();
 
         $userToUpdateBody = [
-            'name' => $userToUpdate->name . ' 2.0',
-            'email' => $userToUpdate->email
+            'name' => $userToUpdate->name.' 2.0',
+            'email' => $userToUpdate->email,
         ];
 
-        $response = $this->call('PUT', '/user/' . $userToUpdate->id, $userToUpdateBody, ['_token' => csrf_token()]);
+        $response = $this->call('PUT', '/user/'.$userToUpdate->id, $userToUpdateBody, ['_token' => csrf_token()]);
 
         $response->assertStatus(302);
         $response = $this->get($this->indexRoute());
@@ -182,13 +182,13 @@ class ResourceTest extends TestCase
 
         $user2 = factory(User::class)->create();
 
-        $response = $this->call('DELETE', '/user/' . $user2->id, ['_token' => csrf_token()]);
+        $response = $this->call('DELETE', '/user/'.$user2->id, ['_token' => csrf_token()]);
 
         $response->assertStatus(302);
         $response = $this->get($this->indexRoute());
 
         $this->assertDatabaseMissing('users', [
-            'id' => $user2->id
+            'id' => $user2->id,
         ]);
     }
 
@@ -207,13 +207,13 @@ class ResourceTest extends TestCase
 
         $this->assertAuthenticatedAs($user);
 
-        $response = $this->call('DELETE', '/user/' . $user->id, ['_token' => csrf_token()]);
+        $response = $this->call('DELETE', '/user/'.$user->id, ['_token' => csrf_token()]);
 
         $response->assertStatus(302);
         $response = $this->get($this->indexRoute());
 
         $this->assertDatabaseHas('users', [
-            'id' => $user->id
+            'id' => $user->id,
         ]);
     }
 
@@ -234,13 +234,13 @@ class ResourceTest extends TestCase
 
         $this->assertEquals($user->roles->pluck('name')->implode(', '), 'Admin');
 
-        $response = $this->call('DELETE', '/user/' . $user->id, ['_token' => csrf_token()]);
+        $response = $this->call('DELETE', '/user/'.$user->id, ['_token' => csrf_token()]);
 
         $response->assertStatus(302);
         $response = $this->get($this->indexRoute());
 
         $this->assertDatabaseHas('users', [
-            'id' => $user->id
+            'id' => $user->id,
         ]);
 
         $this->assertNotNull(User::first());
