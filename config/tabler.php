@@ -5,7 +5,7 @@ return [
     'logo' => 'https://preview.tabler.io/demo/brand/tabler.svg',
     'urls' => [
         'logout' => 'logout',
-        'settings' => 'settings',
+        'user' => 'user',
         'searchUrl' => 'search',
         'homepage' => 'home',
         'login' => 'login',

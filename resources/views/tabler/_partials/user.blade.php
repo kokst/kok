@@ -7,9 +7,11 @@
         </span>
     </a>
     <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-        <a class="dropdown-item" href="{!! url(config('tabler.urls.settings', 'settings')) !!}">
-            <i class="dropdown-icon fe fe-settings"></i> @lang('user.settings')
-        </a>
+        @can('edit users')
+            <a class="dropdown-item" href="{!! url(config('tabler.urls.user', 'user')) !!}">
+                <i class="dropdown-icon fe fe-user"></i> @lang('user.user')
+            </a>
+        @endcan
         <a class="dropdown-item" href="{!! url(config('tabler.urls.logout', 'logout')) !!}">
             <i class="dropdown-icon fe fe-log-out"></i> @lang('user.logout')
         </a>
