@@ -4554,16 +4554,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v9.0.3",
+            "version": "v9.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "8a673ed889d7c9edb300ccaf645e443cab3f87f8"
+                "reference": "458291eb57f2f841e1d7d735e2ed10060bd130c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/8a673ed889d7c9edb300ccaf645e443cab3f87f8",
-                "reference": "8a673ed889d7c9edb300ccaf645e443cab3f87f8",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/458291eb57f2f841e1d7d735e2ed10060bd130c3",
+                "reference": "458291eb57f2f841e1d7d735e2ed10060bd130c3",
                 "shasum": ""
             },
             "require": {
@@ -4600,7 +4600,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2019-07-10T00:08:13+00:00"
+            "time": "2019-07-21T16:56:33+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -6345,8 +6345,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "The PHP Unit Testing framework.",
