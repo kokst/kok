@@ -11,4 +11,19 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.options({
+    processCssUrls: false,
+});
+
 mix.copyDirectory('vendor/tabler/tabler/dist/assets', 'public/admin/assets');
+
+mix.version([
+    'public/admin/assets/css/dashboard.css',
+    'public/admin/assets/js/require.min.js',
+    'public/admin/assets/js/dashboard.js'])
+   .sourceMaps();
+
+mix.js('resources/js/app.js', 'public/js')
+   .extract()
+   .version()
+   .sourceMaps();
