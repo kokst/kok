@@ -8,6 +8,7 @@
         "onecentlin.laravel5-snippets",
         "ryannaddy.laravel-artisan",
         "austenc.laravel-blade-spacer",
-        "octref.vetur"
+        "octref.vetur",
+        "bmewburn.vscode-intelephense-client"
     ]
 }
