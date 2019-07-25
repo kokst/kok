@@ -22,7 +22,7 @@ class UserObserver
     /**
      * Handle the User "updated" event.
      */
-    public function updated(User $user): void
+    public function updated(): void
     {
         Cache::forget('users');
     }
@@ -42,7 +42,7 @@ class UserObserver
     /**
      * Handle the User "deleted" event.
      */
-    public function deleted(User $user): void
+    public function deleted(): void
     {
         Cache::forget('users');
     }
