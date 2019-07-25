@@ -28,7 +28,7 @@ return [
             'permissions',
             'roles',
             Spatie\Permission\Models\Role::class,
-        ]
+        ],
     ],
 
     /*
@@ -62,6 +62,6 @@ return [
     'output' => [
         \BeyondCode\QueryDetector\Outputs\Log::class,
         \BeyondCode\QueryDetector\Outputs\Alert::class,
-    ]
+    ],
 
 ];
