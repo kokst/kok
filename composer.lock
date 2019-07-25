@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9677c7313602c872f755028c470481ff",
+    "content-hash": "91ee8826c1d0eac9ce431abbc1f31c0b",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -769,16 +769,16 @@
         },
         {
             "name": "kokst/core",
-            "version": "v0.0.1",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kokst/core.git",
-                "reference": "69ae3faa43ee447a9ef07e6839794b58946e5ff1"
+                "reference": "5b4575624def188f6a77a2479d453f596bc62169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/69ae3faa43ee447a9ef07e6839794b58946e5ff1",
-                "reference": "69ae3faa43ee447a9ef07e6839794b58946e5ff1",
+                "url": "https://api.github.com/repos/kokst/core/zipball/5b4575624def188f6a77a2479d453f596bc62169",
+                "reference": "5b4575624def188f6a77a2479d453f596bc62169",
                 "shasum": ""
             },
             "require": {
@@ -810,7 +810,7 @@
                 }
             ],
             "description": "Kok Core",
-            "time": "2019-07-12T13:00:15+00:00"
+            "time": "2019-07-24T11:40:20+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1294,16 +1294,16 @@
         },
         {
             "name": "mccool/laravel-auto-presenter",
-            "version": "7.2.0",
+            "version": "7.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-auto-presenter/laravel-auto-presenter.git",
-                "reference": "45270a0054b4d3ae0550cf826bbeeb5c540afac1"
+                "reference": "0afed6721bf8b8dbbf82803dcd84d2a49addf75d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-auto-presenter/laravel-auto-presenter/zipball/45270a0054b4d3ae0550cf826bbeeb5c540afac1",
-                "reference": "45270a0054b4d3ae0550cf826bbeeb5c540afac1",
+                "url": "https://api.github.com/repos/laravel-auto-presenter/laravel-auto-presenter/zipball/0afed6721bf8b8dbbf82803dcd84d2a49addf75d",
+                "reference": "0afed6721bf8b8dbbf82803dcd84d2a49addf75d",
                 "shasum": ""
             },
             "require": {
@@ -1319,7 +1319,7 @@
                 "graham-campbell/analyzer": "^2.1",
                 "graham-campbell/testbench": "^5.2",
                 "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^6.5|^7.0"
+                "phpunit/phpunit": "^6.5|^7.0|^8.0"
             },
             "type": "library",
             "extra": {
@@ -1358,7 +1358,7 @@
                 "lpm",
                 "presenter"
             ],
-            "time": "2019-01-27T21:47:32+00:00"
+            "time": "2019-06-28T09:09:41+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1440,16 +1440,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.20.0",
+            "version": "2.21.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "bc671b896c276795fad8426b0aa24e8ade0f2498"
+                "reference": "58bdbbfab17ccd2ec7347b99e997f18232def4dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bc671b896c276795fad8426b0aa24e8ade0f2498",
-                "reference": "bc671b896c276795fad8426b0aa24e8ade0f2498",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/58bdbbfab17ccd2ec7347b99e997f18232def4dc",
+                "reference": "58bdbbfab17ccd2ec7347b99e997f18232def4dc",
                 "shasum": ""
             },
             "require": {
@@ -1465,6 +1465,9 @@
                 "phpunit/phpunit": "^7.5 || ^8.0",
                 "squizlabs/php_codesniffer": "^3.4"
             },
+            "bin": [
+                "bin/carbon"
+            ],
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1487,6 +1490,10 @@
                     "name": "Brian Nesbitt",
                     "email": "brian@nesbot.com",
                     "homepage": "http://nesbot.com"
+                },
+                {
+                    "name": "kylekatarnls",
+                    "homepage": "http://github.com/kylekatarnls"
                 }
             ],
             "description": "A simple API extension for DateTime.",
@@ -1496,7 +1503,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-06-25T10:00:57+00:00"
+            "time": "2019-07-18T18:47:28+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2164,6 +2171,71 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "2.37.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "81dbe9d372d70c255b66a2727a235076509f8d45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/81dbe9d372d70c255b66a2727a235076509f8d45",
+                "reference": "81dbe9d372d70c255b66a2727a235076509f8d45",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/container": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/contracts": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/database": "~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.4.2|~3.5.0|~3.6.0|~3.7.0",
+                "phpunit/phpunit": "^5.7|6.2|^7.0",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 5.4 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "security",
+                "spatie"
+            ],
+            "time": "2019-04-09T12:45:17+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6280,8 +6352,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "The PHP Unit Testing framework.",
