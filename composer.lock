@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91ee8826c1d0eac9ce431abbc1f31c0b",
+    "content-hash": "4101095967b78a086484819eb8e8e75b",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -769,16 +769,16 @@
         },
         {
             "name": "kokst/core",
-            "version": "v1.0.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kokst/core.git",
-                "reference": "5b4575624def188f6a77a2479d453f596bc62169"
+                "reference": "2a95e94ea2292115090142dad3a00b6f7edc2a63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/5b4575624def188f6a77a2479d453f596bc62169",
-                "reference": "5b4575624def188f6a77a2479d453f596bc62169",
+                "url": "https://api.github.com/repos/kokst/core/zipball/2a95e94ea2292115090142dad3a00b6f7edc2a63",
+                "reference": "2a95e94ea2292115090142dad3a00b6f7edc2a63",
                 "shasum": ""
             },
             "require": {
@@ -810,7 +810,7 @@
                 }
             ],
             "description": "Kok Core",
-            "time": "2019-07-24T11:40:20+00:00"
+            "time": "2019-08-02T09:11:53+00:00"
         },
         {
             "name": "laravel/framework",
@@ -6352,8 +6352,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "The PHP Unit Testing framework.",
