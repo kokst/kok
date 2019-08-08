@@ -90,7 +90,7 @@
 
                     @yield('content')
 
-                    @if(View::hasSection('sidebar'))
+                    @if($sidebar)
                             </div>
                         </div>
                     @endif
