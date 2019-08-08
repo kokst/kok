@@ -73,16 +73,17 @@
             </div>
             <div class="my-3 my-md-5">
                 <div class="container">
-                    <div class="page-header">
-                        <h1 class="page-title d-flex w-100 justify-content-between">
+                    <div class="page-header d-flex w-100 justify-content-between">
+                        <h1 class="page-title">
                             @yield('title')
                         </h1>
+                        @yield('options')
                     </div>
 
-                    @if(View::hasSection('sidebar'))
+                    @if($sidebar)
                         <div class="row row-cards">
                             <div class="col-md-3">
-                                @yield('sidebar')
+                                @include($sidebar)
                             </div>
                             <div class="col-md-9">
                     @endif
@@ -112,15 +113,15 @@
             </div>
         @endif
         @if(config('tabler.support.footer'))
-        <footer class="footer">
-            <div class="container">
-                <div class="row align-items-center flex-row-reverse">
-                    <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
-                        {!! config('tabler.footer') !!}
+            <footer class="footer">
+                <div class="container">
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+                            {!! config('tabler.footer') !!}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
         @endif
     </div>
     <script src="{{ mix('admin/assets/js/require.min.js') }}"></script>
