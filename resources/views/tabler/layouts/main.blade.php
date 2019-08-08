@@ -134,6 +134,15 @@
     <script src="{{ mix('js/manifest.js') }}"></script>
     <script src="{{ mix('js/vendor.js') }}"></script>
     <script src="{{ mix('js/app.js') }}"></script>
+
+    @if(config('app.debug') && count($errors) > 0)
+        <script>
+            @foreach ($errors->all() as $error)
+                console.log('{{ $error }}');
+            @endforeach
+        </script>
+    @endif
+
     @stack('scripts')
 </body>
 </html>
