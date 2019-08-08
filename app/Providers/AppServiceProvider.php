@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
         // provide view with sidebar info if available
         view()->composer('*', function ($view) {
             $view = $view->getName();
-            if (strpos($view, ':') !== FALSE) {
+            if (strpos($view, ':') !== false) {
                 $namespace = strtok($view, ':');
 
                 if (view()->exists($namespace.'::sidebar')) {
