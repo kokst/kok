@@ -23,6 +23,18 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // provide view with sidebar info if available
+        view()->composer('*', function($view) {
+            $view = $view->getName();
+            if (strpos($view, ":") !== FALSE) {
+                $namespace = strtok($view, ':');
+
+                if (view()->exists($namespace.'::sidebar')) {
+                    view()->share('sidebar', $namespace.'::sidebar');
+                } else {
+                    view()->share('sidebar', false);
+                }
+            }
+        });
     }
 }
