@@ -138,7 +138,7 @@
     @if(config('app.debug') && count($errors) > 0)
         <script>
             @foreach ($errors->all() as $error)
-                console.log('{{ $error }}');
+                console.error('{{ $error }}');
             @endforeach
         </script>
     @endif
