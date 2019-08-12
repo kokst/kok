@@ -88,6 +88,8 @@
                             <div class="col-md-9">
                     @endif
 
+                    @include('flash::message')
+
                     @yield('content')
 
                     @if($sidebar)
