@@ -4,6 +4,7 @@ namespace Modules\Home\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Modules\Home\Http\Middleware\DefineMenus;
 
 class HomeServiceProvider extends ServiceProvider
 {
@@ -20,8 +21,7 @@ class HomeServiceProvider extends ServiceProvider
         $this->registerFactories();
         $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
 
-        $kernel = $this->app->make('Illuminate\Contracts\Http\Kernel');
-        $kernel->pushMiddleware('Modules\Home\Http\Middleware\DefineMenus');
+        $this->app['router']->pushMiddlewareToGroup('web', DefineMenus::class);
     }
 
     /**
