@@ -77,7 +77,10 @@
                         <h1 class="page-title">
                             @yield('title')
                         </h1>
-                        @yield('options')
+
+                        @if($options)
+                            @include($options)
+                        @endif
                     </div>
 
                     @if($sidebar)
