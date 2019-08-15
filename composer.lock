@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1af6ae7e32f4d178cc8c53b1dacc25ab",
+    "content-hash": "f4f425b8f32045382a4f16bc9ca2de26",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -769,16 +769,16 @@
         },
         {
             "name": "kokst/core",
-            "version": "v1.2.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kokst/core.git",
-                "reference": "2a95e94ea2292115090142dad3a00b6f7edc2a63"
+                "reference": "951142ebde38ab8f0f5d83d50876029b1cf916be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/2a95e94ea2292115090142dad3a00b6f7edc2a63",
-                "reference": "2a95e94ea2292115090142dad3a00b6f7edc2a63",
+                "url": "https://api.github.com/repos/kokst/core/zipball/951142ebde38ab8f0f5d83d50876029b1cf916be",
+                "reference": "951142ebde38ab8f0f5d83d50876029b1cf916be",
                 "shasum": ""
             },
             "require": {
@@ -810,7 +810,7 @@
                 }
             ],
             "description": "Kok Core",
-            "time": "2019-08-02T09:11:53+00:00"
+            "time": "2019-08-15T10:55:15+00:00"
         },
         {
             "name": "laracasts/flash",
@@ -2275,9 +2275,9 @@
             "authors": [
                 {
                     "name": "Freek Van der Herten",
-                    "role": "Developer",
                     "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be"
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
                 }
             ],
             "description": "Permission handling for Laravel 5.4 and up",
@@ -6134,8 +6134,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
@@ -6406,8 +6406,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "The PHP Unit Testing framework.",

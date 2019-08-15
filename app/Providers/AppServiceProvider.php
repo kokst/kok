@@ -38,6 +38,12 @@ class AppServiceProvider extends ServiceProvider
             } else {
                 view()->share('sidebar', false);
             }
+
+            if (isset($namespace) && view()->exists($namespace.'::options')) {
+                view()->share('options', $namespace.'::options');
+            } else {
+                view()->share('options', false);
+            }
         });
     }
 }
