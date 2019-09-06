@@ -73,12 +73,32 @@
             </div>
             <div class="my-3 my-md-5">
                 <div class="container">
-                    <div class="page-header">
-                        <h1 class="page-title d-flex w-100 justify-content-between">
+                    <div class="page-header d-flex w-100 justify-content-between">
+                        <h1 class="page-title">
                             @yield('title')
                         </h1>
+
+                        @if($options)
+                            @include($options)
+                        @endif
                     </div>
+
+                    @if($sidebar)
+                        <div class="row row-cards">
+                            <div class="col-md-3">
+                                @include($sidebar)
+                            </div>
+                            <div class="col-md-9">
+                    @endif
+
+                    @include('flash::message')
+
                     @yield('content')
+
+                    @if($sidebar)
+                            </div>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
@@ -98,15 +118,15 @@
             </div>
         @endif
         @if(config('tabler.support.footer'))
-        <footer class="footer">
-            <div class="container">
-                <div class="row align-items-center flex-row-reverse">
-                    <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
-                        {!! config('tabler.footer') !!}
+            <footer class="footer">
+                <div class="container">
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+                            {!! config('tabler.footer') !!}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
         @endif
     </div>
     <script src="{{ mix('admin/assets/js/require.min.js') }}"></script>
@@ -119,6 +139,15 @@
     <script src="{{ mix('js/manifest.js') }}"></script>
     <script src="{{ mix('js/vendor.js') }}"></script>
     <script src="{{ mix('js/app.js') }}"></script>
+
+    @if(config('app.debug') && count($errors) > 0)
+        <script>
+            @foreach ($errors->all() as $error)
+                console.error('{{ $error }}');
+            @endforeach
+        </script>
+    @endif
+
     @stack('scripts')
 </body>
 </html>
