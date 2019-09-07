@@ -20,7 +20,7 @@
                 @lang('login.password')
                 <a href="{!! url(config('tabler.urls.forgot', 'password/reset')) !!}" class="float-right small">@lang('login.forgot')</a>
             </label>
-            {!! Form::password('password', ['class' => ['form-control', $errors->has('password') ? 'is-invalid' : ''], 'placeholder' => trans('login.password-placeholder')]) !!}
+            {!! Form::password('password', ['id' => 'password', 'class' => ['form-control', $errors->has('password') ? 'is-invalid' : ''], 'placeholder' => trans('login.password-placeholder')]) !!}
 
             @if ($errors->has('password'))
                 <span class="invalid-feedback">
