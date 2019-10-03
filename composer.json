@@ -12,7 +12,7 @@
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^6.0",
-        "laravolt/avatar": "^2.1",
+        "laravolt/avatar": "^3.0",
         "lavary/laravel-menu": "^1.7",
         "nwidart/laravel-modules": "^5.0",
         "spatie/laravel-permission": "^3.0",
