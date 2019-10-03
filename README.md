@@ -4,7 +4,7 @@
 ### Setup
 Create a new Kok project by issuing the following commands in your terminal:
 ```
-composer create-project --prefer-dist kokst/kok <folder> <release>
+composer create-project kokst/kok <folder> <release>
 ```
 
 ```
