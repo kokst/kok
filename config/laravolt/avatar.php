@@ -122,5 +122,5 @@ return [
             ],
             'foregrounds' => ['#FFFFFF'],
         ],
-    ]
+    ],
 ];

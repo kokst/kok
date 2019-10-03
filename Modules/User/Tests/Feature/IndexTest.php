@@ -3,9 +3,9 @@
 namespace Modules\User\Tests\Feature;
 
 use App\User;
-use Tests\TestCase;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Hash;
+use Tests\TestCase;
 
 class IndexTest extends TestCase
 {

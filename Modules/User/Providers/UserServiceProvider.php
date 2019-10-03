@@ -3,9 +3,9 @@
 namespace Modules\User\Providers;
 
 use App\User;
+use Illuminate\Database\Eloquent\Factory;
 use Illuminate\Support\ServiceProvider;
 use Modules\User\Observers\UserObserver;
-use Illuminate\Database\Eloquent\Factory;
 
 class UserServiceProvider extends ServiceProvider
 {
