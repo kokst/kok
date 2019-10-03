@@ -2,8 +2,8 @@
 
 namespace Modules\Home\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Illuminate\Support\ServiceProvider;
 use Modules\Home\Http\Middleware\DefineMenus;
 
 class HomeServiceProvider extends ServiceProvider

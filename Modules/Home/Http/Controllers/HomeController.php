@@ -2,8 +2,8 @@
 
 namespace Modules\Home\Http\Controllers;
 
-use Illuminate\View\View;
 use Illuminate\Routing\Controller;
+use Illuminate\View\View;
 
 class HomeController extends Controller
 {

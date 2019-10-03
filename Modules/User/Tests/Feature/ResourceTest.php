@@ -3,10 +3,10 @@
 namespace Modules\User\Tests\Feature;
 
 use App\User;
-use Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\TestCase;
 
 class ResourceTest extends TestCase
 {

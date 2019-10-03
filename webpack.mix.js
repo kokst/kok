@@ -24,6 +24,6 @@ mix.version([
    .sourceMaps();
 
 mix.js('resources/js/app.js', 'public/js')
-   .extract()
-   .version()
-   .sourceMaps();
+    .extract()
+    .version()
+    .sourceMaps();
