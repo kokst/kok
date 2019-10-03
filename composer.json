@@ -4,12 +4,12 @@
     "description": "Kok.",
     "license": "MIT",
     "require": {
-        "php": "^7.2.0",
+        "php": "^7.2",
         "ecrmnn/laravel-https": "^1.0",
         "fideloper/proxy": "^4.0",
         "kokst/core": "^2.0",
         "laracasts/flash": "^3.0",
-        "laravel/framework": "5.8.*",
+        "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.7",
         "laravolt/avatar": "^2.1",
@@ -19,10 +19,9 @@
         "thecodingmachine/safe": "^0.1.11"
     },
     "require-dev": {
-        "beyondcode/laravel-dump-server": "^1.0",
         "beyondcode/laravel-query-detector": "^1.0",
         "dczajkowski/auth-tests": "^5.8",
-        "filp/whoops": "^2.0",
+        "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4",
         "laravel/homestead": "^9.0",
         "mockery/mockery": "^1.0",
