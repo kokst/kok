@@ -20,7 +20,7 @@
     },
     "require-dev": {
         "beyondcode/laravel-query-detector": "^1.0",
-        "dczajkowski/auth-tests": "^5.8",
+        "dczajkowski/auth-tests": "^6.0",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4",
         "laravel/homestead": "^9.0",
