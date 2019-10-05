@@ -4679,16 +4679,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v9.2.0",
+            "version": "v9.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "638e70e6df22ca3ad7c04b53292c3900890eb3ae"
+                "reference": "720e3773ab266b87b7f15cc5fdbc658a1735b965"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/638e70e6df22ca3ad7c04b53292c3900890eb3ae",
-                "reference": "638e70e6df22ca3ad7c04b53292c3900890eb3ae",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/720e3773ab266b87b7f15cc5fdbc658a1735b965",
+                "reference": "720e3773ab266b87b7f15cc5fdbc658a1735b965",
                 "shasum": ""
             },
             "require": {
@@ -4720,7 +4720,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2019-09-27T01:34:08+00:00"
+            "time": "2019-10-05T16:43:00+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -5581,18 +5581,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "role": "Developer",
-                    "email": "sebastian@phpeople.de"
+                    "email": "sebastian@phpeople.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "Developer",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "Developer"
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
@@ -7465,8 +7465,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
