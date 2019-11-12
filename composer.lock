@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25fbe0e5d9ea298aa232827115c0dd2a",
+    "content-hash": "b7fc2aa2c91e15c593ac344521875fc6",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1559,26 +1559,27 @@
         },
         {
             "name": "nwidart/laravel-modules",
-            "version": "5.1.0",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nWidart/laravel-modules.git",
-                "reference": "d4edc3465d471644ca44b1b303803492609957cd"
+                "reference": "a3ec61c39ccb49363bf440ce6c2a5308a95be9aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/d4edc3465d471644ca44b1b303803492609957cd",
-                "reference": "d4edc3465d471644ca44b1b303803492609957cd",
+                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/a3ec61c39ccb49363bf440ce6c2a5308a95be9aa",
+                "reference": "a3ec61c39ccb49363bf440ce6c2a5308a95be9aa",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "php": ">=7.2"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.14",
-                "laravel/framework": "5.8.*",
+                "friendsofphp/php-cs-fixer": "^2.15",
+                "laravel/framework": "6.0.*",
                 "mockery/mockery": "~1.0",
-                "orchestra/testbench": "^3.8",
+                "orchestra/testbench": "^4.0",
                 "phpstan/phpstan": "^0.9.2",
                 "phpunit/phpunit": "~7.0|~8.0",
                 "spatie/phpunit-snapshot-assertions": "^2.1.0"
@@ -1594,7 +1595,7 @@
                     }
                 },
                 "branch-alias": {
-                    "dev-master": "5.0-dev"
+                    "dev-master": "6.0-dev"
                 }
             },
             "autoload": {
@@ -1625,7 +1626,7 @@
                 "nwidart",
                 "rad"
             ],
-            "time": "2019-09-05T09:41:08+00:00"
+            "time": "2019-11-01T10:42:10+00:00"
         },
         {
             "name": "opis/closure",
