@@ -3223,7 +3223,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.3.7",
+            "version": "v4.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -4939,16 +4939,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v9.2.1",
+            "version": "v9.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "720e3773ab266b87b7f15cc5fdbc658a1735b965"
+                "reference": "ac8a1dc8dff82d9d3e568b31f71add43d8f72bb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/720e3773ab266b87b7f15cc5fdbc658a1735b965",
-                "reference": "720e3773ab266b87b7f15cc5fdbc658a1735b965",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/ac8a1dc8dff82d9d3e568b31f71add43d8f72bb6",
+                "reference": "ac8a1dc8dff82d9d3e568b31f71add43d8f72bb6",
                 "shasum": ""
             },
             "require": {
@@ -4980,7 +4980,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2019-10-05T16:43:00+00:00"
+            "time": "2019-11-01T20:44:36+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -7682,16 +7682,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.3.4",
+            "version": "v4.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "5a0b7c32dc3ec56fd4abae8a4a71b0cf05013686"
+                "reference": "324cf4b19c345465fad14f3602050519e09e361d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/5a0b7c32dc3ec56fd4abae8a4a71b0cf05013686",
-                "reference": "5a0b7c32dc3ec56fd4abae8a4a71b0cf05013686",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/324cf4b19c345465fad14f3602050519e09e361d",
+                "reference": "324cf4b19c345465fad14f3602050519e09e361d",
                 "shasum": ""
             },
             "require": {
@@ -7737,7 +7737,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-08-20T14:27:59+00:00"
+            "time": "2019-10-30T12:58:49+00:00"
         },
         {
             "name": "thecodingmachine/phpstan-safe-rule",
