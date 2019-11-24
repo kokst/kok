@@ -7,7 +7,7 @@
         "php": "^7.3",
         "ecrmnn/laravel-https": "^1.0",
         "fideloper/proxy": "^4.0",
-        "kokst/core": "^2.0",
+        "kokst/core": "^6.1",
         "laracasts/flash": "^3.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
