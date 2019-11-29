@@ -10,7 +10,6 @@ matrix:
     - php: nightly
       env: COMPOSER_INSTALL_FLAGS=--ignore-platform-reqs
   allow_failures:
-    - php: 7.4snapshot
     - php: nightly
 
 before_script:
