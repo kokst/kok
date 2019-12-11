@@ -1,5 +1,5 @@
 build:
-  box: vintagesucks/docker-xenial-node10-chrome-php73
+  box: vintagesucks/docker-bionic-node12-chrome-php74
   steps:
     - script:
         name: composer
