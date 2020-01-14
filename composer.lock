@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79be0801cfa34edfe88c69b4e813519b",
+    "content-hash": "9c4b8774884530f6931bd355ce0a4fc2",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -716,21 +716,21 @@
         },
         {
             "name": "kokst/core",
-            "version": "v2.1.1",
+            "version": "v6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kokst/core.git",
-                "reference": "8f7a030f9d58ef806060ae9616dcf190b8f192ab"
+                "reference": "95b0f7238204218a71f7fe5a01e54b78f65cf404"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/8f7a030f9d58ef806060ae9616dcf190b8f192ab",
-                "reference": "8f7a030f9d58ef806060ae9616dcf190b8f192ab",
+                "url": "https://api.github.com/repos/kokst/core/zipball/95b0f7238204218a71f7fe5a01e54b78f65cf404",
+                "reference": "95b0f7238204218a71f7fe5a01e54b78f65cf404",
                 "shasum": ""
             },
             "require": {
                 "jenssegers/date": "^3.5",
-                "mccool/laravel-auto-presenter": "^7.2",
+                "mccool/laravel-auto-presenter": "^7.3",
                 "tabler/tabler": "0.0.33"
             },
             "type": "library",
@@ -757,7 +757,7 @@
                 }
             ],
             "description": "Kok Core",
-            "time": "2019-09-05T09:10:22+00:00"
+            "time": "2019-12-11T16:37:55+00:00"
         },
         {
             "name": "laracasts/flash",
@@ -1292,16 +1292,16 @@
         },
         {
             "name": "mccool/laravel-auto-presenter",
-            "version": "7.3.0",
+            "version": "7.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-auto-presenter/laravel-auto-presenter.git",
-                "reference": "c364ab8f7f6a6e133745b3f667c737a4dbee9296"
+                "reference": "e2d5ce138df00c098d3b74f0b41de6358e02a90a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-auto-presenter/laravel-auto-presenter/zipball/c364ab8f7f6a6e133745b3f667c737a4dbee9296",
-                "reference": "c364ab8f7f6a6e133745b3f667c737a4dbee9296",
+                "url": "https://api.github.com/repos/laravel-auto-presenter/laravel-auto-presenter/zipball/e2d5ce138df00c098d3b74f0b41de6358e02a90a",
+                "reference": "e2d5ce138df00c098d3b74f0b41de6358e02a90a",
                 "shasum": ""
             },
             "require": {
@@ -1356,7 +1356,7 @@
                 "lpm",
                 "presenter"
             ],
-            "time": "2019-08-26T15:04:57+00:00"
+            "time": "2020-01-02T00:08:52+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1441,22 +1441,22 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.25.0",
+            "version": "2.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "b70da677101cca7b584c7489770d2677c2733593"
+                "reference": "e2bcbcd43e67ee6101d321d5de916251d2870ca8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/b70da677101cca7b584c7489770d2677c2733593",
-                "reference": "b70da677101cca7b584c7489770d2677c2733593",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e2bcbcd43e67ee6101d321d5de916251d2870ca8",
+                "reference": "e2bcbcd43e67ee6101d321d5de916251d2870ca8",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": "^7.1.8 || ^8.0",
-                "symfony/translation": "^3.4 || ^4.0"
+                "symfony/translation": "^3.4 || ^4.0 || ^5.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.14 || ^3.0",
@@ -1471,6 +1471,9 @@
             ],
             "type": "library",
             "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
                 "laravel": {
                     "providers": [
                         "Carbon\\Laravel\\ServiceProvider"
@@ -1504,7 +1507,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-09-30T16:22:22+00:00"
+            "time": "2019-12-16T16:30:25+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -3411,16 +3414,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v4.3.4",
+            "version": "v4.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "28498169dd334095fa981827992f3a24d50fed0f"
+                "reference": "73f86a49454d9477864ccbb6c06993e24a052a48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/28498169dd334095fa981827992f3a24d50fed0f",
-                "reference": "28498169dd334095fa981827992f3a24d50fed0f",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/73f86a49454d9477864ccbb6c06993e24a052a48",
+                "reference": "73f86a49454d9477864ccbb6c06993e24a052a48",
                 "shasum": ""
             },
             "require": {
@@ -3483,20 +3486,20 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-08-26T08:55:16+00:00"
+            "time": "2019-11-26T03:44:44+00:00"
         },
         {
             "name": "symfony/translation-contracts",
-            "version": "v1.1.6",
+            "version": "v1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation-contracts.git",
-                "reference": "325b17c24f3ee23cbecfa63ba809c6d89b5fa04a"
+                "reference": "364518c132c95642e530d9b2d217acbc2ccac3e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/325b17c24f3ee23cbecfa63ba809c6d89b5fa04a",
-                "reference": "325b17c24f3ee23cbecfa63ba809c6d89b5fa04a",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/364518c132c95642e530d9b2d217acbc2ccac3e6",
+                "reference": "364518c132c95642e530d9b2d217acbc2ccac3e6",
                 "shasum": ""
             },
             "require": {
@@ -3540,7 +3543,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2019-08-02T12:15:04+00:00"
+            "time": "2019-09-17T11:12:18+00:00"
         },
         {
             "name": "symfony/var-dumper",
