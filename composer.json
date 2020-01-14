@@ -10,7 +10,7 @@
         "kokst/core": "^2.0",
         "laracasts/flash": "^3.0",
         "laravel/framework": "^6.0",
-        "laravel/tinker": "^1.0",
+        "laravel/tinker": "^2.0",
         "laravelcollective/html": "^6.0",
         "laravolt/avatar": "^3.0",
         "lavary/laravel-menu": "^1.7",
