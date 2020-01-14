@@ -4242,16 +4242,16 @@
         },
         {
             "name": "dczajkowski/auth-tests",
-            "version": "6.0.0",
+            "version": "6.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DCzajkowski/auth-tests.git",
-                "reference": "2df9b1f48787cfd48b2ed713b42c87378c92feba"
+                "reference": "46baa9c884b950a9a9525c79c72e57189d0306b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DCzajkowski/auth-tests/zipball/2df9b1f48787cfd48b2ed713b42c87378c92feba",
-                "reference": "2df9b1f48787cfd48b2ed713b42c87378c92feba",
+                "url": "https://api.github.com/repos/DCzajkowski/auth-tests/zipball/46baa9c884b950a9a9525c79c72e57189d0306b9",
+                "reference": "46baa9c884b950a9a9525c79c72e57189d0306b9",
                 "shasum": ""
             },
             "require": {
@@ -4283,7 +4283,7 @@
                 }
             ],
             "description": "Authentication tests for Laravel built-in authentication module.",
-            "time": "2019-09-07T08:12:32+00:00"
+            "time": "2019-10-29T00:59:25+00:00"
         },
         {
             "name": "doctrine/annotations",
