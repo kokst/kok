@@ -4,7 +4,6 @@ namespace Modules\User\Tests\Feature;
 
 use App\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Tests\TestCase;
 
@@ -117,6 +116,7 @@ class ResourceTest extends TestCase
             'name' => $userToCreate->name,
             'email' => $userToCreate->email,
             'password' => $userToCreate->password,
+            'role' => 1,
         ];
 
         $response = $this->call('POST', '/user/', $userToCreateBody, ['_token' => csrf_token()]);
@@ -155,6 +155,7 @@ class ResourceTest extends TestCase
         $userToUpdateBody = [
             'name' => $userToUpdate->name.' 2.0',
             'email' => $userToUpdate->email,
+            'role' => 1,
         ];
 
         $response = $this->call('PUT', '/user/'.$userToUpdate->id, $userToUpdateBody, ['_token' => csrf_token()]);

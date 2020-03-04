@@ -3,12 +3,13 @@
 namespace Modules\User\Http\Controllers;
 
 use App\User;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Routing\Controller;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\Rule;
 use Illuminate\View\View;
+use Illuminate\Validation\Rule;
+use Spatie\Permission\Models\Role;
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Cache;
 
 class UserController extends Controller
 {
@@ -50,6 +51,12 @@ class UserController extends Controller
                 'name' => ['type' => 'text', 'required' => true],
                 'email' => ['type' => 'text', 'required' => true],
                 'password' => ['type' => 'password', 'required' => true],
+                'role' => [
+                    'type' => 'select',
+                    'collection' => Role::all()->sortBy('name')->pluck('name', 'id'),
+                    'placeholder' => 'Bitte wählen',
+                    'required' => true,
+                ],
             ],
             'header' => __('user::create.title'),
         ]);
@@ -64,13 +71,18 @@ class UserController extends Controller
             'name' => ['required', 'min:3'],
             'email' => ['required', 'email', 'unique:users,email'],
             'password' => ['required', 'min:8'],
+            'role' => ['required'],
         ]);
+
+        $role = Role::where('id', '=', request()->role)->firstOrFail()->name;
 
         $user = User::create([
             'name' => request()->input('name'),
             'email' => request()->input('email'),
             'password' => Hash::make(request()->input('password')),
         ]);
+
+        $user->assignRole($role);
 
         return redirect('/user');
     }
@@ -80,6 +92,10 @@ class UserController extends Controller
      */
     public function edit(User $user): View
     {
+        if (isset($user->roles[0])) {
+            $role = $user->roles[0]->id;
+        }
+
         return view('vendor.kokst.core.resource.form', [
             'resource' => 'user',
             'type' => 'edit',
@@ -90,6 +106,13 @@ class UserController extends Controller
             'fields' => [
                 'name' => ['type' => 'text', 'required' => true],
                 'email' => ['type' => 'text', 'required' => true],
+                'role' => [
+                    'type' => 'select',
+                    'collection' => Role::all()->sortBy('name')->pluck('name', 'id'),
+                    'placeholder' => 'Bitte wählen',
+                    'required' => true,
+                    'old' => $role ?? null,
+                ],
             ],
             'header' => __('user::edit.title'),
         ]);
@@ -107,12 +130,23 @@ class UserController extends Controller
                 'email',
                 Rule::unique('users')->ignore($user->id),
             ],
+            'role' => ['required'],
         ]);
 
         $user->update(request([
             'name',
             'email',
         ]));
+
+        if (isset($user->roles[0])) {
+            $oldRoleId = $user->roles[0]->id;
+            $oldRole = Role::where('id', '=', $oldRoleId)->firstOrFail()->name;
+            $user->removeRole($oldRole);
+        }
+
+        $role = Role::where('id', '=', request()->role)->firstOrFail()->name;
+        $user->assignRole($role);
+        $user->touch();
 
         return redirect('/user');
     }
