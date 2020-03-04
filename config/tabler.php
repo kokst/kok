@@ -15,6 +15,7 @@ return [
         'post-register' => 'register',
         'post-email' => 'password/email',
         'post-reset' => 'password/reset',
+        'post-confirm' => 'password/confirm',
     ],
     'footer' => null,
     'support' => [
