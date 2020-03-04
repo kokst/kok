@@ -11,53 +11,53 @@ class ResourceTest extends TestCase
 {
     use RefreshDatabase;
 
-    protected function createGetRoute()
+    protected function createGetRoute(): string
     {
         return route('user.create');
     }
 
-    protected function editGetRoute($id)
+    protected function editGetRoute(int $id): string
     {
         return route('user.edit', $id);
     }
 
-    protected function createPostRoute()
+    protected function createPostRoute(): string
     {
         return route('user.store');
     }
 
-    protected function destroyPostRoute()
+    protected function destroyPostRoute(): string
     {
         return route('user.destroy');
     }
 
-    protected function indexRoute()
+    protected function indexRoute(): string
     {
         return route('user.index');
     }
 
-    protected function loginGetRoute()
+    protected function loginGetRoute(): string
     {
         return route('login');
     }
 
-    protected function logoutGetRoute()
+    protected function logoutGetRoute(): string
     {
         return route('logout');
     }
 
-    protected function loginPostRoute()
+    protected function loginPostRoute(): string
     {
         return route('login');
     }
 
-    public function testRedirectToLoginIfNotAuthenticated()
+    public function testRedirectToLoginIfNotAuthenticated(): void
     {
         $response = $this->get($this->createGetRoute());
         $response->assertRedirect($this->loginGetRoute());
     }
 
-    public function testUserCanViewIndexIfAuthenticated()
+    public function testUserCanViewIndexIfAuthenticated(): void
     {
         $user = factory(User::class)->create([
             'password' => Hash::make($password = 'i-love-laravel'),
@@ -74,7 +74,7 @@ class ResourceTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function testUserCanViewEditIfAuthenticated()
+    public function testUserCanViewEditIfAuthenticated(): void
     {
         $user = factory(User::class)->create([
             'password' => Hash::make($password = 'i-love-laravel'),
@@ -91,7 +91,7 @@ class ResourceTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function testCanCreateIfAuthenticated()
+    public function testCanCreateIfAuthenticated(): void
     {
         $this->assertNull(User::first());
 
@@ -133,7 +133,7 @@ class ResourceTest extends TestCase
         $this->assertEquals($createdUser->email, $userToCreate->email);
     }
 
-    public function testCanUpdateIfAuthenticated()
+    public function testCanUpdateIfAuthenticated(): void
     {
         $this->assertNull(User::first());
 
@@ -166,7 +166,7 @@ class ResourceTest extends TestCase
         $this->assertEquals(User::first()->name, $userToUpdateBody['name']);
     }
 
-    public function testCanDeleteIfAuthenticated()
+    public function testCanDeleteIfAuthenticated(): void
     {
         $this->assertNull(User::first());
 
@@ -193,7 +193,7 @@ class ResourceTest extends TestCase
         ]);
     }
 
-    public function testFirstUserCannotBeDeleted()
+    public function testFirstUserCannotBeDeleted(): void
     {
         $this->assertNull(User::first());
 
@@ -218,7 +218,7 @@ class ResourceTest extends TestCase
         ]);
     }
 
-    public function testFirstUserStillHasAdminRoleAfterDeleteAttempt()
+    public function testFirstUserStillHasAdminRoleAfterDeleteAttempt(): void
     {
         $this->assertNull(User::first());
 
@@ -250,7 +250,7 @@ class ResourceTest extends TestCase
         $this->assertEquals($user->roles->pluck('name')->implode(', '), 'Admin');
     }
 
-    public function testFirstUserHasAdminRole()
+    public function testFirstUserHasAdminRole(): void
     {
         $this->assertNull(User::first());
 
@@ -261,7 +261,7 @@ class ResourceTest extends TestCase
         $this->assertEquals($user->roles->pluck('name')->implode(', '), 'Admin');
     }
 
-    public function testSecondUserDoesNotHaveAdminRole()
+    public function testSecondUserDoesNotHaveAdminRole(): void
     {
         $this->assertNull(User::first());
 
@@ -276,7 +276,7 @@ class ResourceTest extends TestCase
         $this->assertStringNotContainsString('Admin', $user2->roles->pluck('name')->implode(', '));
     }
 
-    public function testUserCanOnlyViewUserAdministrationIfHasAdminRole()
+    public function testUserCanOnlyViewUserAdministrationIfHasAdminRole(): void
     {
         $user = factory(User::class)->create([
             'password' => Hash::make($password = 'i-love-laravel'),

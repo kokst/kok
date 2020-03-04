@@ -7,8 +7,16 @@ parameters:
         - app
         - Modules
 
+    level: 7
+
     autoload_directories:
         - %rootDir%/../../../Modules
 
     excludes_analyse:
         - %rootDir%/../../../Modules/*/Database/factories/*.php
+
+    ignoreErrors:
+        - '#Access to an undefined property App\\User::\$id#'
+        - '#Access to an undefined property Spatie\\Permission\\Models\\Role::\$name#'
+        - '#Access to an undefined property Spatie\\Permission\\Models\\Role::\$id#'
+        - '#Method App\\Http\\Middleware\\Authenticate::redirectTo() should return string|null but return statement is missing#'

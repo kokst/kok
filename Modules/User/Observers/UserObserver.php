@@ -29,6 +29,8 @@ class UserObserver
 
     /**
      * Handle the User "deleting" event.
+     *
+     * @return false|void
      */
     public function deleting(User $user)
     {
