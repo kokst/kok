@@ -1,8 +1,5 @@
 language: php
 
-node_js:
-  - 12
-
 matrix:
   fast_finish: true
   include:
@@ -16,6 +13,7 @@ matrix:
     - php: nightly
 
 before_script:
+  - nvm install 12
   - cp .env.example .env
   - travis_retry composer install --no-interaction --prefer-dist ${COMPOSER_INSTALL_FLAGS}
   - yarn
