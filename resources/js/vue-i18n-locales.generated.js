@@ -119,6 +119,12 @@ export default {
             "password-confirmation": "Password confirmation",
             "password-confirmation-placeholder": "*******"
         },
+        "confirm": {
+            "title": "Please confirm your password before continuing",
+            "password-placeholder": "*******",
+            "password": "Password",
+            "send": "Confirm Password"
+        },
         "error": {
             "400-title": "Bad request",
             "400-message": "Something went wrong when you accessing this page, please try again later or refresh to continue.",
