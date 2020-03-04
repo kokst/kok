@@ -3,13 +3,13 @@
 namespace Modules\User\Http\Controllers;
 
 use App\User;
-use Illuminate\View\View;
-use Illuminate\Validation\Rule;
-use Spatie\Permission\Models\Role;
-use Illuminate\Routing\Controller;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rule;
+use Illuminate\View\View;
+use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
