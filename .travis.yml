@@ -1,5 +1,8 @@
 language: php
 
+node_js:
+  - 12
+
 matrix:
   fast_finish: true
   include:
