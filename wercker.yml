@@ -24,7 +24,7 @@ build:
         code: ./vendor/bin/phpunit
     - script:
         name: larastan
-        code: php artisan code:analyse --level=5 --paths="app,Modules"
+        code: ./vendor/bin/phpstan analyse --level=5
     - script:
         name: php-cs-fixer
         code: php artisan fixer:fix --dry-run --diff
