@@ -3,6 +3,10 @@ includes:
     - vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
 
 parameters:
+    paths:
+        - app
+        - Modules
+
     autoload_directories:
         - %rootDir%/../../../Modules
 
