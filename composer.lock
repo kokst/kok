@@ -669,16 +669,16 @@
         },
         {
             "name": "kokst/core",
-            "version": "v6.2.0",
+            "version": "v6.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kokst/core.git",
-                "reference": "95b0f7238204218a71f7fe5a01e54b78f65cf404"
+                "reference": "b024acd3aa77df52811fecfba2818e0a6e1f7e8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/core/zipball/95b0f7238204218a71f7fe5a01e54b78f65cf404",
-                "reference": "95b0f7238204218a71f7fe5a01e54b78f65cf404",
+                "url": "https://api.github.com/repos/kokst/core/zipball/b024acd3aa77df52811fecfba2818e0a6e1f7e8d",
+                "reference": "b024acd3aa77df52811fecfba2818e0a6e1f7e8d",
                 "shasum": ""
             },
             "require": {
@@ -710,7 +710,7 @@
                 }
             ],
             "description": "Kok Core",
-            "time": "2019-12-11T16:37:55+00:00"
+            "time": "2020-02-07T17:21:56+00:00"
         },
         {
             "name": "laracasts/flash",
@@ -1384,37 +1384,37 @@
         },
         {
             "name": "mccool/laravel-auto-presenter",
-            "version": "7.3.1",
+            "version": "7.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-auto-presenter/laravel-auto-presenter.git",
-                "reference": "e2d5ce138df00c098d3b74f0b41de6358e02a90a"
+                "reference": "1dd41157edf05ca19d0af50a16ce7b09dc1b4704"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-auto-presenter/laravel-auto-presenter/zipball/e2d5ce138df00c098d3b74f0b41de6358e02a90a",
-                "reference": "e2d5ce138df00c098d3b74f0b41de6358e02a90a",
+                "url": "https://api.github.com/repos/laravel-auto-presenter/laravel-auto-presenter/zipball/1dd41157edf05ca19d0af50a16ce7b09dc1b4704",
+                "reference": "1dd41157edf05ca19d0af50a16ce7b09dc1b4704",
                 "shasum": ""
             },
             "require": {
-                "illuminate/container": "^5.5|^6.0",
-                "illuminate/contracts": "^5.5|^6.0",
-                "illuminate/events": "^5.5|^6.0",
-                "illuminate/pagination": "^5.5|^6.0",
-                "illuminate/support": "^5.5|^6.0",
-                "illuminate/view": "^5.5|^6.0",
+                "illuminate/container": "^5.5|^6.0|^7.0",
+                "illuminate/contracts": "^5.5|^6.0|^7.0",
+                "illuminate/events": "^5.5|^6.0|^7.0",
+                "illuminate/pagination": "^5.5|^6.0|^7.0",
+                "illuminate/support": "^5.5|^6.0|^7.0",
+                "illuminate/view": "^5.5|^6.0|^7.0",
                 "php": "^7.1.3"
             },
             "require-dev": {
-                "graham-campbell/analyzer": "^2.1",
-                "graham-campbell/testbench": "^5.2",
-                "mockery/mockery": "^1.0",
+                "graham-campbell/analyzer": "^2.4",
+                "graham-campbell/testbench": "^5.4",
+                "mockery/mockery": "^1.3.1",
                 "phpunit/phpunit": "^6.5|^7.0|^8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.3-dev"
+                    "dev-master": "7.4-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -1448,7 +1448,7 @@
                 "lpm",
                 "presenter"
             ],
-            "time": "2020-01-02T00:08:52+00:00"
+            "time": "2020-01-26T13:54:53+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1533,16 +1533,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.28.0",
+            "version": "2.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "e2bcbcd43e67ee6101d321d5de916251d2870ca8"
+                "reference": "bbc0ab53f41a4c6f223c18efcdbd9bc725eb5d2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e2bcbcd43e67ee6101d321d5de916251d2870ca8",
-                "reference": "e2bcbcd43e67ee6101d321d5de916251d2870ca8",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bbc0ab53f41a4c6f223c18efcdbd9bc725eb5d2d",
+                "reference": "bbc0ab53f41a4c6f223c18efcdbd9bc725eb5d2d",
                 "shasum": ""
             },
             "require": {
@@ -1553,7 +1553,7 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.14 || ^3.0",
                 "kylekatarnls/multi-tester": "^1.1",
-                "phpmd/phpmd": "dev-php-7.1-compatibility",
+                "phpmd/phpmd": "^2.8",
                 "phpstan/phpstan": "^0.11",
                 "phpunit/phpunit": "^7.5 || ^8.0",
                 "squizlabs/php_codesniffer": "^3.4"
@@ -1599,7 +1599,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-12-16T16:30:25+00:00"
+            "time": "2020-03-01T11:11:58+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -3215,16 +3215,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.13.1",
+            "version": "v1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f"
+                "reference": "34094cfa9abe1f0f14f48f490772db7a775559f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7b4aab9743c30be783b73de055d24a39cf4b954f",
-                "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/34094cfa9abe1f0f14f48f490772db7a775559f2",
+                "reference": "34094cfa9abe1f0f14f48f490772db7a775559f2",
                 "shasum": ""
             },
             "require": {
@@ -3236,7 +3236,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.13-dev"
+                    "dev-master": "1.14-dev"
                 }
             },
             "autoload": {
@@ -3270,7 +3270,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-11-27T14:18:11+00:00"
+            "time": "2020-01-13T11:15:53+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
@@ -3570,16 +3570,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v4.4.2",
+            "version": "v4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "f7669f48a9633bf8139bc026c755e894b7206677"
+                "reference": "0a19a77fba20818a969ef03fdaf1602de0546353"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/f7669f48a9633bf8139bc026c755e894b7206677",
-                "reference": "f7669f48a9633bf8139bc026c755e894b7206677",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/0a19a77fba20818a969ef03fdaf1602de0546353",
+                "reference": "0a19a77fba20818a969ef03fdaf1602de0546353",
                 "shasum": ""
             },
             "require": {
@@ -3642,7 +3642,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-12-12T12:53:52+00:00"
+            "time": "2020-02-04T09:32:40+00:00"
         },
         {
             "name": "symfony/translation-contracts",
