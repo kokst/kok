@@ -5151,19 +5151,21 @@
         },
         {
             "name": "martinlindhe/laravel-vue-i18n-generator",
-            "version": "0.1.42",
+            "version": "0.1.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/martinlindhe/laravel-vue-i18n-generator.git",
-                "reference": "f546c3f520d085f508b73933000da95ad528e1f1"
+                "reference": "fc4e344747b485124b822eb271d0be6c8a581de6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/martinlindhe/laravel-vue-i18n-generator/zipball/f546c3f520d085f508b73933000da95ad528e1f1",
-                "reference": "f546c3f520d085f508b73933000da95ad528e1f1",
+                "url": "https://api.github.com/repos/martinlindhe/laravel-vue-i18n-generator/zipball/fc4e344747b485124b822eb271d0be6c8a581de6",
+                "reference": "fc4e344747b485124b822eb271d0be6c8a581de6",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
                 "illuminate/console": "~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0|~6.0",
                 "illuminate/support": "~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0|~6.0",
                 "php": ">=5.5.0"
@@ -5200,7 +5202,7 @@
                 "laravel",
                 "vue-i18n"
             ],
-            "time": "2019-10-22T05:26:37+00:00"
+            "time": "2020-02-13T09:36:58+00:00"
         },
         {
             "name": "mockery/mockery",
