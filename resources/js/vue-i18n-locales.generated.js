@@ -34,11 +34,6 @@ export default {
             "kokst": {
                 "core": {
                     "components": {
-                        "yearswitcher": {
-                            "index": {
-                                "new": "Neu"
-                            }
-                        },
                         "datatable": {
                             "index": {
                                 "search": "Suche &hellip;",
@@ -53,6 +48,11 @@ export default {
                                 "delete": "Löschen",
                                 "zero": "Keine Daten verfügbar"
                             }
+                        },
+                        "yearswitcher": {
+                            "index": {
+                                "new": "Neu"
+                            }
                         }
                     }
                 }
@@ -60,70 +60,21 @@ export default {
         }
     },
     "en": {
-        "email": {
-            "title": "Fill in fields to continue",
-            "email": "Email",
-            "email-placeholder": "username@domain.com",
-            "send": "Send"
-        },
-        "passwords": {
-            "reset": "Your password has been reset!",
-            "sent": "We have emailed your password reset link!",
-            "throttled": "Please wait before retrying.",
-            "token": "This password reset token is invalid.",
-            "user": "We can't find a user with that email address."
-        },
-        "login": {
-            "title": "Fill all fields to continue",
-            "email": "Email",
-            "email-placeholder": "username@domain.com",
-            "password": "Password",
-            "forgot": "Forgot password?",
-            "password-placeholder": "********",
-            "remeber-me": "Remember me",
-            "signin": "Sign in",
-            "register": "Create account"
-        },
         "auth": {
             "failed": "These credentials do not match our records.",
             "throttle": "Too many login attempts. Please try again in {seconds} seconds."
-        },
-        "pagination": {
-            "previous": "&laquo; Previous",
-            "next": "Next &raquo;"
-        },
-        "register": {
-            "title": "Fill in fields to continue",
-            "name-placeholder": "Your fullname",
-            "email": "Your email",
-            "email-placeholder": "username@domain.com",
-            "password": "Password",
-            "password-placeholder": "********",
-            "password-confirmation": "Password confirmation",
-            "password-confirmation-placeholder": "********",
-            "singup": "Signup",
-            "login": "Sign in instead",
-            "name": "Fullname"
-        },
-        "user": {
-            "user": "Users",
-            "logout": "Logout"
-        },
-        "reset": {
-            "title": "Fill in fields to continue",
-            "email": "Email",
-            "email-placeholder": "username@domain.com",
-            "send": "Send",
-            "password-placeholder": "*******",
-            "password": "Password",
-            "password-confirmation": "Password confirmation",
-            "password-confirmation-placeholder": "*******"
         },
         "confirm": {
             "title": "Please confirm your password before continuing",
             "password-placeholder": "*******",
             "password": "Password",
             "send": "Confirm Password"
+        },
+        "email": {
+            "title": "Fill in fields to continue",
+            "email": "Email",
+            "email-placeholder": "username@domain.com",
+            "send": "Send"
         },
         "error": {
             "400-title": "Bad request",
@@ -140,6 +91,55 @@ export default {
             "500-message": "Something went wrong when you accessing this page, please try again later or refresh to continue.",
             "503-title": "Service Unavailable",
             "503-message": "Something went wrong when you accessing this page, please try again later or refresh to continue."
+        },
+        "login": {
+            "title": "Fill all fields to continue",
+            "email": "Email",
+            "email-placeholder": "username@domain.com",
+            "password": "Password",
+            "forgot": "Forgot password?",
+            "password-placeholder": "********",
+            "remeber-me": "Remember me",
+            "signin": "Sign in",
+            "register": "Create account"
+        },
+        "pagination": {
+            "previous": "&laquo; Previous",
+            "next": "Next &raquo;"
+        },
+        "passwords": {
+            "reset": "Your password has been reset!",
+            "sent": "We have emailed your password reset link!",
+            "throttled": "Please wait before retrying.",
+            "token": "This password reset token is invalid.",
+            "user": "We can't find a user with that email address."
+        },
+        "register": {
+            "title": "Fill in fields to continue",
+            "name-placeholder": "Your fullname",
+            "email": "Your email",
+            "email-placeholder": "username@domain.com",
+            "password": "Password",
+            "password-placeholder": "********",
+            "password-confirmation": "Password confirmation",
+            "password-confirmation-placeholder": "********",
+            "singup": "Signup",
+            "login": "Sign in instead",
+            "name": "Fullname"
+        },
+        "reset": {
+            "title": "Fill in fields to continue",
+            "email": "Email",
+            "email-placeholder": "username@domain.com",
+            "send": "Send",
+            "password-placeholder": "*******",
+            "password": "Password",
+            "password-confirmation": "Password confirmation",
+            "password-confirmation-placeholder": "*******"
+        },
+        "user": {
+            "user": "Users",
+            "logout": "Logout"
         },
         "validation": {
             "accepted": "The {attribute} must be accepted.",
@@ -256,11 +256,6 @@ export default {
         "vendor": {
             "kokst": {
                 "core": {
-                    "yearswitcher": {
-                        "index": {
-                            "new": "New"
-                        }
-                    },
                     "components": {
                         "datatable": {
                             "index": {
@@ -276,6 +271,11 @@ export default {
                                 "delete": "Delete",
                                 "zero": "No data available"
                             }
+                        }
+                    },
+                    "yearswitcher": {
+                        "index": {
+                            "new": "New"
                         }
                     }
                 }
