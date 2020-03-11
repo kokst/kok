@@ -25,14 +25,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/kokst/Laravel-PHP-CS-Fixer"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/kokst/laravel-query-detector"
         }
     ],
     "require-dev": {
-        "beyondcode/laravel-query-detector": "dev-laravel-7",
+        "beyondcode/laravel-query-detector": "^1.2.0",
         "dczajkowski/auth-tests": "^7.0",
         "facade/ignition": "^2.0",
         "fzaninotto/faker": "^1.9.1",
