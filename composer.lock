@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aaeadc155a542faf6d754a1b4f5cf58a",
+    "content-hash": "fec88bfc68a0aea65fd59d42a6a86cd0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4268,25 +4268,25 @@
     "packages-dev": [
         {
             "name": "beyondcode/laravel-query-detector",
-            "version": "dev-laravel-7",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kokst/laravel-query-detector.git",
-                "reference": "46e13bf172ce46e341e92a6b6dc0d37ee1630569"
+                "url": "https://github.com/beyondcode/laravel-query-detector.git",
+                "reference": "dc41392e3f7ac39f7880cc834dc7387be448f0c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kokst/laravel-query-detector/zipball/46e13bf172ce46e341e92a6b6dc0d37ee1630569",
-                "reference": "46e13bf172ce46e341e92a6b6dc0d37ee1630569",
+                "url": "https://api.github.com/repos/beyondcode/laravel-query-detector/zipball/dc41392e3f7ac39f7880cc834dc7387be448f0c2",
+                "reference": "dc41392e3f7ac39f7880cc834dc7387be448f0c2",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "^5.5|^6|^7",
+                "illuminate/support": "^5.5 || ^6.0 || ^7.0",
                 "php": "^7.1"
             },
             "require-dev": {
-                "orchestra/testbench": "3.6.*",
-                "phpunit/phpunit": "^7.0"
+                "orchestra/testbench": "^3.0 || ^4.0 || ^5.0",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "extra": {
@@ -4301,19 +4301,7 @@
                     "BeyondCode\\QueryDetector\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "BeyondCode\\QueryDetector\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4331,10 +4319,7 @@
                 "beyondcode",
                 "laravel-query-detector"
             ],
-            "support": {
-                "source": "https://github.com/kokst/laravel-query-detector/tree/laravel-7"
-            },
-            "time": "2020-03-04T15:56:43+00:00"
+            "time": "2020-03-11T09:06:03+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -7638,7 +7623,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "beyondcode/laravel-query-detector": 20,
         "stechstudio/laravel-php-cs-fixer": 20
     },
     "prefer-stable": true,
