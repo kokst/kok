@@ -15,7 +15,7 @@
         "jquery": "3.3.1",
         "laravel-mix": "^5.0.4",
         "vue": "^2.6.12",
-        "vue-i18n": "^8.15.3",
+        "vue-i18n": "^8.21.0",
         "vue-template-compiler": "^2.6.12",
         "vue2-selectize": "^1.1.7"
     }
