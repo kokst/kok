@@ -23,7 +23,7 @@
         "dczajkowski/auth-tests": "^6.0",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4",
-        "laravel/homestead": "^9.0",
+        "laravel/homestead": "^11.2",
         "martinlindhe/laravel-vue-i18n-generator": "^0.1.42",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
