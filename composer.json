@@ -14,7 +14,7 @@
         "laravelcollective/html": "^6.0",
         "laravolt/avatar": "^3.0",
         "lavary/laravel-menu": "^1.7",
-        "nwidart/laravel-modules": "^5.0",
+        "nwidart/laravel-modules": "^8.0",
         "spatie/laravel-permission": "^3.0",
         "thecodingmachine/safe": "^0.1.11"
     },
