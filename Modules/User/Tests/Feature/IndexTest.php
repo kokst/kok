@@ -11,33 +11,33 @@ class IndexTest extends TestCase
 {
     use RefreshDatabase;
 
-    protected function indexRoute()
+    protected function indexRoute(): string
     {
         return route('user.index');
     }
 
-    protected function homeRoute()
+    protected function homeRoute(): string
     {
         return route('home.index');
     }
 
-    protected function loginGetRoute()
+    protected function loginGetRoute(): string
     {
         return route('login');
     }
 
-    protected function loginPostRoute()
+    protected function loginPostRoute(): string
     {
         return route('login');
     }
 
-    public function testRedirectToLoginIfNotAuthenticated()
+    public function testRedirectToLoginIfNotAuthenticated(): void
     {
         $response = $this->get($this->indexRoute());
         $response->assertRedirect($this->loginGetRoute());
     }
 
-    public function testUserCanViewIndexIfAuthenticated()
+    public function testUserCanViewIndexIfAuthenticated(): void
     {
         $user = factory(User::class)->create([
             'password' => Hash::make($password = 'i-love-laravel'),
